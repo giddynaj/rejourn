@@ -54,15 +54,15 @@ try:
     if content_raw != None:
       content_clean = BeautifulSoup(content_raw)
       #[cc.extract() for cc in content_clean('a')]
-      #[cc.extract() for cc in content_clean('script')]
-      #[cc.extract() for cc in content_clean('noscript')]
-      #[cc.extract() for cc in content_clean('style')]
+      [cc.extract() for cc in content_clean('script')]
+      [cc.extract() for cc in content_clean('noscript')]
+      [cc.extract() for cc in content_clean('style')]
 
       #content must be greater than 2 characters
       content_clean = [cc.get_text() for cc in content_clean('p') if len(cc.get_text()) > 2]
 
       #content must have punctuation at the end
-      content_clean = [cc for cc in content_clean if bool(re.search(r'[.!?]$',cc))]
+      content_clean = [cc for cc in content_clean if bool(re.search(r'[.!?][\s\t\r\n]*$',cc))]
 
       #content must have more than two words
       content_clean = [cc for cc in content_clean if len(filter(None,cc.split(' '))) > 2]
