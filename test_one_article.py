@@ -97,17 +97,14 @@ if train_new_chunker:
   conll_train= conll2000.chunked_sents('train.txt')
   #chunker = TagChunker(train_chunks)
   chunker = ClassifierChunker(conll_train)
+  print("Writing new chunk.pickle")
+  f = open('chunk.pickle','w')
+  pickle.dump(chunker,f)
+  f.close()
 else:
-  #RegexpParser - pass trace=1 to get output
-  chunker = RegexpParser(r'''
-  NP:
-    {(<DT>|<JJ>)<NN.*>+} #Noun Phrase - chunk
-    }<VB.*>{ #Noun Phrase - chink
-  PP:
-    {<IN><VB.*>+}
-    {<IN><NN.*>+}
-  VP:{<VB.*>+<RP.*>+}
-  ''')
+  print("Opening existing chunker.pickle")
+  f = open('chunker.pickle','r')
+  tagger = pickle.load(f)
 
 #Tests for sequential backoff route
 #print("tests should be true: " + str(tagger._taggers[-1]==backoff))
@@ -145,6 +142,11 @@ tagged_sents = [chunker.parse(tagged_sent) for tagged_sent in tagged_sents]
 
 
 # evaluate accuracy
+
+pdb.set_trace()
+#pos [leaf[1] for tagged_sent in tagged_sents for leaf in tagged_sent.leaves()]
+#tokens [leaf[0] for tagged_sent in tagged_sents for leaf in tagged_sent.leaves()]
+#set(tokens)
 
 #Output
 for tree in tagged_sents:
