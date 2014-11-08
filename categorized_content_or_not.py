@@ -1,14 +1,15 @@
 #From 1491 of cookbook
 #This is how we would load in the customized corpus
 from nltk.corpus.reader import CategorizedPlaintextCorpusReader
-reader = CategorizedPlaintextCorpusReader('.',r'movie_.*\.txt', cat_pattern=r'movie_(\w+)\.txt')
+#reader = CategorizedPlaintextCorpusReader('.',r'movie_.*\.txt', cat_pattern=r'movie_(\w+)\.txt')
 #reader = CategorizedPlaintextCorpusReader('.',r'movie_.*\.txt', cat_map={'movie_pos.txt':['pos'],'movie_next.txt':['neg']})
+reader = CategorizedPlaintextCorpusReader('./nltk_data/custom_corpora/',r'content_.*\.txt', cat_map={'content_good.txt':['good'],'content_bad.txt':['bad']})
 
 reader.categories()
 #['neg','pos']
-reader.fileids(categories=['neg']
+reader.fileids(categories=['good'])
 #['movie_neg.txt']
-reader.fileids(categories=['pos']
+reader.fileids(categories=['bad'])
 #['movie_pos.txt']
 
 #location 3442
@@ -41,7 +42,7 @@ def label_feats_from_corpus(corp, feature_detector=bag_of_words):
     for fileid in corp.fileids(categories=[label]):
       feats = feature_detector(corp.words(fileids=[fileid]))
       label_feats[label].append(feats)
- return label_feats
+  return label_feats
 
 def split_label_feats(lfeats, split=0.75):
   train_feats = []
@@ -54,11 +55,12 @@ def split_label_feats(lfeats, split=0.75):
 
 #Training NaiveBayesClassifier
 from nltk.corpus import movie_reviews
-lfeats = label_feats_from_corpus(movie_reviews)
+cfeats = label_feats_from_corpus(reader)
+mfeats = label_feats_from_corpus(movie_reviews)
 #lfeats.keys()
 ##['neg','pos']
-train_feats, test_feats = split_label_feats(lfeats)
+#train_feats, test_feats = split_label_feats(lfeats)
 
-from nltk.classify import NaiveBayesClassifier
-nb_classifier = NaiveBayesClassifier.train(train_feats)
+#from nltk.classify import NaiveBayesClassifier
+#nb_classifier = NaiveBayesClassifier.train(train_feats)
 

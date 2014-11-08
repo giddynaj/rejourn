@@ -5,6 +5,7 @@ import pdb
 from nltk.tokenize import sent_tokenize
 from bs4 import BeautifulSoup as bs
 import nlp
+from pygoogle import pygoogle as pg
 
 class EnableCors(object):
     name = 'enable_cors'
@@ -25,6 +26,16 @@ class EnableCors(object):
 
 app = bottle.app()
 
+@app.route('/search', method=['OPTIONS','POST'])
+def search():
+  query = request.json['query']
+  g = pg(query)
+  results = g.search()
+  pdb.set_trace() 
+  sent_complex = {'class_legend' : { 0 : 'content', 1 : 'not-content', 2:'extra' },'sentences' : sent_tokenize_list, 'classes' : [0 for sent in sent_tokenize_list]}
+  response.content_type = 'application/json' 
+  return json.dumps(sent_complex)
+
 @app.route('/tokenize_sent', method=['OPTIONS','POST'])
 def tokenize_sent():
   content = request.json['content']
@@ -35,8 +46,15 @@ def tokenize_sent():
   response.content_type = 'application/json' 
   return json.dumps(sent_complex)
 
+@app.route('/get_sent', method=['OPTIONS','POST'])
+def get_sent():
+  content = request.json['content']
+  classes = request.json['classes']
+  nlp.receive_content(classes,content)
+  return {'result' : 'success'}
+
 @app.route('/assign_pos', method=['OPTIONS','POST'])
-def tokenize_sent():
+def assign_pos():
   content = request.json['content']
   sents = nlp.word_tokenize(content)
   pos_tag = nlp.get_pos_tagger()
