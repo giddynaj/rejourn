@@ -1,5 +1,7 @@
-import nltk.chunk, itertools
+import nltk.tag, nltk.chunk, itertools
+from nltk.corpus import ieer
 from nltk.tag import ClassifierBasedTagger
+import pdb
 
 def chunk_trees2train_chunks(chunk_sents):
   tag_sents = [nltk.chunk.tree2conlltags(sent) for sent in chunk_sents]
@@ -28,6 +30,28 @@ def prev_next_pos_iob(tokens, index, history):
     'previob' : previob
   }
   return feats
+
+def ieertree2conlltags(tree,tag=nltk.tag.pos_tag):
+  words, ents = zip(*tree.pos())
+  iobs = []
+  prev = None
+  
+  for ent in ents:
+    if ent == tree.label():
+      iobs.append('O')
+      prev = None
+    elif prev == ent:
+      iobs.append('I-%s' % ent)
+    else:
+      iobs.append('B-%s' % ent)
+      prev = ent
+  words, tags = zip(*tag(words))
+  return itertools.izip(words, tags, iobs)
+ 
+def ieer_chunked_sents(tag=nltk.tag.pos_tag):
+  for doc in ieer.parsed_docs():
+    tagged = ieertree2conlltags(doc.text, tag)
+    yield nltk.chunk.conlltags2tree(tagged)
 
 class ClassifierChunker(nltk.chunk.ChunkParserI):
   def __init__(self, train_sents, feature_detector=prev_next_pos_iob, **kwargs):

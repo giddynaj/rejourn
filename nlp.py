@@ -94,4 +94,38 @@ def set_chunk_tags(texts,chunk_tagger):
     tagged_sents = [chunk_tagger.parse(tagged_sent) for tagged_sent in texts]
     return tagged_sents
 
+def get_entity_tagger():
+  f = open('entity.pickle','r')
+  tagger = pickle.load(f)
+  return tagger
 
+
+def get_entity_iobs(tree):
+  ne_dict = {'DOCUMENT' : 0 ,
+  'LOCATION' : 1,
+  'DURATION' : 2,
+  'DATE' : 3,
+  'MEASURE' : 4,
+  'ORGANIZATION' : 5,
+  'PERSON' : 6,
+  'MONEY' : 7,
+  'CARDINAL' : 8,
+  'PERCENT' : 9,
+  'TIME' : 10
+  }
+  words, ents = zip(*tree.pos())
+  iobs = []
+  prev = None
+  
+  for ent in ents:
+    if ent == tree.label():
+      iobs.append(0)
+      prev = None
+    elif prev == ent:
+      iobs.append(prev)
+    else:
+      prev = ne_dict[ent]
+      iobs.append(prev)
+  return iobs
+ 
+  
