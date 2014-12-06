@@ -18,6 +18,8 @@ from chunkers import ClassifierChunker
 import pickle
 import os, os.path
 
+rpath = os.path.expanduser('~/rejourn')
+
 # split to sentences
 # using punkt
 def sentence_tokenize(texts):
@@ -43,9 +45,9 @@ def add_training_text_to_sentence_tokenizer(text):
     import nltk.tokenize.punkt
     import codecs
     tokenizer = nltk.tokenize.punkt.PunktSentenceTokenizer()
-    text = codecs.open("sentence.txt","r","utf8").read()
+    text = codecs.open(rpath + "/train/sentence.txt","r","utf8").read()
     tokenizer.train(text)
-    out = open("sentence.pickle","wb")
+    out = open(rpath + "/pickles/sentence.pickle","wb")
     pickle.dump(tokenizer, out)
     out.close()
 
@@ -54,13 +56,13 @@ def train_punktsent(trainfile, modelfile):
   """ Trains an unsupervised NLTK punkt sentence tokenizer. """
   punkt = PunktTrainer()
   try:
-    with codecs.open(trainfile, 'r','utf8') as fin:
+    with codecs.open(rpath + "/" + trainfile, 'r','utf8') as fin:
       punkt.train(fin.read(), finalize=False, verbose=False)
   except KeyboardInterrupt:
     print 'KeyboardInterrupt: Stopping the reading of the dump early!'
   ##HACK: Adds abbreviations from rb_tokenizer.
   abbrv_sent = " ".join([i.strip() for i in \
-                         codecs.open('abbrev.lex','r','utf8').readlines()])
+                         codecs.open(rpath + '/abbrev.lex','r','utf8').readlines()])
   abbrv_sent = "Start"+abbrv_sent+"End."
   punkt.train(abbrv_sent,finalize=False, verbose=False)
   # Finalize and outputs trained model.
@@ -77,7 +79,7 @@ def word_tokenize(texts):
     return word_list
 
 def get_pos_tagger():
-    f = open('tagger.pickle','r')
+    f = open(rpath + '/pickles/tagger.pickle','r')
     tagger = pickle.load(f)
     return tagger
 
@@ -86,7 +88,7 @@ def set_pos_tags(texts,pos_tagger):
     return tagged_sents 
 
 def get_chunk_tagger():
-    f = open('chunk.pickle','r')
+    f = open(rpath + '/pickles/chunk.pickle','r')
     tagger = pickle.load(f)
     return tagger
 
@@ -95,7 +97,7 @@ def set_chunk_tags(texts,chunk_tagger):
     return tagged_sents
 
 def get_entity_tagger():
-  f = open('entity.pickle','r')
+  f = open(rpath + '/pickles/entity.pickle','r')
   tagger = pickle.load(f)
   return tagger
 
