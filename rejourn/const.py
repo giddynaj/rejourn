@@ -1,0 +1,11 @@
+ace_entities = ('DOCUMENT',
+  'LOCATION',
+  'DURATION',
+  'DATE',
+  'MEASURE',
+  'ORGANIZATION',
+  'PERSON',
+  'MONEY',
+  'CARDINAL',
+  'PERCENT',
+  'TIME')

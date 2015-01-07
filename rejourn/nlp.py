@@ -27,7 +27,7 @@ def sentence_tokenize(texts):
     article_sent = sentence_tokenizer.tokenize(texts)
     return article_sent
 
-def receive_content(classes,texts):
+def receive_content(request_type,classes,texts):
     path = os.path.expanduser('~/nltk_data')
     b = open(path + '/custom_corpora/content_bad.txt','a')    
     g = open(path + '/custom_corpora/content_good.txt','a')    
@@ -40,6 +40,35 @@ def receive_content(classes,texts):
 
     b.close()
     g.close()
+
+def receive_iob_content(request_type,class_legend,classes, pos_tags, texts):
+    path = os.path.expanduser('~/nltk_data')
+    b = open(path + '/custom_corpora/' + request_type + '.txt','w+')    
+    
+    prev = ""
+    for id, text in enumerate(texts):
+      classified_tag =  class_legend[str(classes[id])]
+      pos_tag = pos_tags[id]
+
+      if classified_tag == prev:
+        prefix = 'I-'
+      elif pos_tag == 'EOL':
+        prefix = ''
+        classified_tag = ''
+        prev = ''
+      elif classified_tag == 'DOCUMENT':
+        prefix = ''
+        classified_tag = 'O'
+        prev = ''
+      else:
+        prefix = 'B-'
+        prev = classified_tag
+      
+      if pos_tag == 'EOL':
+        b.write('\n')     
+      else:
+        b.write(text + ' ' + pos_tags[id] + ' ' + prefix + classified_tag + '\n')
+    b.close()
 
 def add_training_text_to_sentence_tokenizer(text):
     import nltk.tokenize.punkt
@@ -73,7 +102,7 @@ def train_punktsent(trainfile, modelfile):
   return model
 
 # tokenize words
-def word_tokenize(texts):
+def word_tokenize_sentences(texts):
     word_tokenizer = TreebankWordTokenizer()
     word_list = [word_tokenizer.tokenize(sent) for sent in texts]
     return word_list

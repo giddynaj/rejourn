@@ -1,6 +1,7 @@
 import nltk.tag, nltk.chunk, itertools
 from nltk.corpus import ieer
 from nltk.tag import ClassifierBasedTagger
+import nltk.data
 import pdb
 
 def chunk_trees2train_chunks(chunk_sents):
