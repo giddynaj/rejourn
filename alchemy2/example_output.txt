@@ -1,0 +1,4163 @@
+
+
+            ,                                                                                                                              
+      .I7777~                                                                                                                              
+     .I7777777                                                                                                                             
+   +.  77777777                                                                                                                            
+ =???,  I7777777=                                                                                                                          
+=??????   7777777?   ,:::===?                                                                                                              
+=???????.  777777777777777777~         .77:    ??           :7                                              =$,     :$$$$$$+  =$?          
+ ????????: .777777777777777777         II77    ??           :7                                              $$7     :$?   7$7 =$?          
+  .???????=  +7777777777777777        .7 =7:   ??   :7777+  :7:I777?    ?777I=  77~777? ,777I I7      77   +$?$:    :$?    $$ =$?          
+    ???????+  ~777???+===:::         :7+  ~7   ?? .77    +7 :7?.   II  7~   ,I7 77+   I77   ~7 ?7    =7:  .$, =$    :$?  ,$$? =$?          
+    ,???????~                        77    7:  ?? ?I.     7 :7     :7 ~7      7 77    =7:    7  7    7~   7$   $=   :$$$$$$~  =$?          
+    .???????  ,???I77777777777~     :77777777~ ?? 7:        :7     :7 777777777:77    =7     7  +7  ~7   $$$$$$$$I  :$?       =$?          
+   .???????  ,7777777777777777      7=      77 ?? I+      7 :7     :7 ??      7,77    =7     7   7~ 7,  =$7     $$, :$?       =$?          
+  .???????. I77777777777777777     +7       ,7???  77    I7 :7     :7  7~   .?7 77    =7     7   ,77I   $+       7$ :$?       =$?          
+ ,???????= :77777777777777777~     7=        ~7??  ~I77777  :7     :7  ,777777. 77    =7     7    77,  +$        .$::$?       =$?          
+,???????  :7777777                                                                                77                                       
+ =?????  ,7777777                                                                               77=                                        
+   +?+  7777777?                                                                                                                           
+    +  ~7777777                                                                                                                            
+       I777777                                                                                                                             
+          :~                                                                                                                               
+
+
+############################################
+#   Entity Extraction Example              #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "totalTransactions": "2", 
+    "language": "english", 
+    "url": "", 
+    "entities": [
+        {
+            "count": "4", 
+            "sentiment": {
+                "score": "0.290716", 
+                "type": "positive"
+            }, 
+            "disambiguated": {
+                "freebase": "http://rdf.freebase.com/ns/m.066vhq", 
+                "dbpedia": "http://dbpedia.org/resource/John_Roberts", 
+                "name": "John Roberts"
+            }, 
+            "text": "Chief Justice John Roberts", 
+            "relevance": "0.787497", 
+            "type": "Person"
+        }, 
+        {
+            "relevance": "0.68244", 
+            "count": "5", 
+            "type": "Person", 
+            "sentiment": {
+                "mixed": "1", 
+                "score": "-0.234187", 
+                "type": "negative"
+            }, 
+            "text": "Anthony Elonis"
+        }, 
+        {
+            "relevance": "0.550999", 
+            "count": "3", 
+            "type": "FieldTerminology", 
+            "sentiment": {
+                "mixed": "1", 
+                "score": "-0.242385", 
+                "type": "negative"
+            }, 
+            "text": "chat room"
+        }, 
+        {
+            "count": "2", 
+            "sentiment": {
+                "score": "-0.326279", 
+                "type": "negative"
+            }, 
+            "disambiguated": {
+                "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+                "yago": "http://yago-knowledge.org/resource/Ruth_Bader_Ginsburg", 
+                "name": "Ruth Bader Ginsburg", 
+                "freebase": "http://rdf.freebase.com/ns/m.0199pk", 
+                "subType": [
+                    "Politician", 
+                    "HallOfFameInductee", 
+                    "Judge"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Ruth_Bader_Ginsburg"
+            }, 
+            "text": "Justice Ruth Bader Ginsburg", 
+            "relevance": "0.50815", 
+            "type": "Person"
+        }, 
+        {
+            "count": "2", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "disambiguated": {
+                "website": "http://www.eminem.com/", 
+                "yago": "http://yago-knowledge.org/resource/Eminem", 
+                "name": "Eminem", 
+                "freebase": "http://rdf.freebase.com/ns/m.01vsgrn", 
+                "subType": [
+                    "MusicalArtist"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Eminem", 
+                "musicBrainz": "http://zitgist.com/music/artist/b95ce3ff-3d05-4e87-9e01-c97b66af13d4"
+            }, 
+            "text": "Eminem", 
+            "relevance": "0.498861", 
+            "type": "Person"
+        }, 
+        {
+            "count": "2", 
+            "sentiment": {
+                "score": "-0.557738", 
+                "type": "negative"
+            }, 
+            "disambiguated": {
+                "website": "http://www.facebook.com/", 
+                "yago": "http://yago-knowledge.org/resource/Facebook", 
+                "name": "Facebook", 
+                "freebase": "http://rdf.freebase.com/ns/m.02y1vz", 
+                "subType": [
+                    "Website", 
+                    "VentureFundedCompany"
+                ], 
+                "crunchbase": "http://www.crunchbase.com/company/facebook", 
+                "dbpedia": "http://dbpedia.org/resource/Facebook"
+            }, 
+            "text": "Facebook", 
+            "relevance": "0.495382", 
+            "type": "Company"
+        }, 
+        {
+            "relevance": "0.465509", 
+            "count": "3", 
+            "type": "Person", 
+            "sentiment": {
+                "score": "0.242295", 
+                "type": "positive"
+            }, 
+            "text": "Michael Dreeben"
+        }, 
+        {
+            "count": "1", 
+            "sentiment": {
+                "score": "-0.641078", 
+                "type": "negative"
+            }, 
+            "disambiguated": {
+                "website": "http://www.supremecourtus.gov/", 
+                "yago": "http://yago-knowledge.org/resource/Supreme_Court_of_the_United_States", 
+                "name": "Supreme Court of the United States", 
+                "freebase": "http://rdf.freebase.com/ns/m.07sz1", 
+                "opencyc": "http://sw.opencyc.org/concept/Mx4rvegiTpwpEbGdrcN5Y29ycA", 
+                "subType": [
+                    "GovernmentalBody"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Supreme_Court_of_the_United_States", 
+                "geo": "38.890708333333336 -77.00434444444444"
+            }, 
+            "text": "Supreme Court", 
+            "relevance": "0.405244", 
+            "type": "Organization"
+        }, 
+        {
+            "relevance": "0.36095", 
+            "count": "1", 
+            "type": "City", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "text": "WASHINGTON"
+        }, 
+        {
+            "relevance": "0.359388", 
+            "count": "1", 
+            "type": "StateOrCounty", 
+            "sentiment": {
+                "score": "-0.68455", 
+                "type": "negative"
+            }, 
+            "text": "Pennsylvania"
+        }, 
+        {
+            "relevance": "0.356426", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "text": "First Amendment"
+        }, 
+        {
+            "relevance": "0.352762", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "sentiment": {
+                "score": "-0.602516", 
+                "type": "negative"
+            }, 
+            "text": "Domestic violence"
+        }, 
+        {
+            "relevance": "0.345581", 
+            "count": "1", 
+            "type": "Organization", 
+            "sentiment": {
+                "score": "-0.711837", 
+                "type": "negative"
+            }, 
+            "text": "FBI"
+        }, 
+        {
+            "relevance": "0.339691", 
+            "count": "1", 
+            "type": "Person", 
+            "sentiment": {
+                "score": "-0.388244", 
+                "type": "negative"
+            }, 
+            "text": "Alito"
+        }, 
+        {
+            "relevance": "0.336931", 
+            "count": "1", 
+            "type": "Organization", 
+            "sentiment": {
+                "score": "0.242295", 
+                "type": "positive"
+            }, 
+            "text": "Justice Department"
+        }, 
+        {
+            "relevance": "0.334729", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "sentiment": {
+                "score": "-0.709627", 
+                "type": "negative"
+            }, 
+            "text": "federal law"
+        }, 
+        {
+            "relevance": "0.332624", 
+            "count": "1", 
+            "type": "Degree", 
+            "sentiment": {
+                "score": "-0.326279", 
+                "type": "negative"
+            }, 
+            "text": "stent"
+        }, 
+        {
+            "relevance": "0.326892", 
+            "count": "1", 
+            "type": "Person", 
+            "sentiment": {
+                "score": "0.613636", 
+                "type": "positive"
+            }, 
+            "text": "Elwood"
+        }, 
+        {
+            "count": "1", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "disambiguated": {
+                "website": "http://twitter.com/", 
+                "name": "Twitter", 
+                "freebase": "http://rdf.freebase.com/ns/m.0289n8t", 
+                "subType": [
+                    "Website", 
+                    "VentureFundedCompany"
+                ], 
+                "crunchbase": "http://www.crunchbase.com/company/twitter", 
+                "dbpedia": "http://dbpedia.org/resource/Twitter"
+            }, 
+            "text": "Twitter", 
+            "relevance": "0.305117", 
+            "type": "Company"
+        }, 
+        {
+            "relevance": "0.295131", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "text": "social media"
+        }, 
+        {
+            "relevance": "0.290693", 
+            "count": "1", 
+            "type": "JobTitle", 
+            "sentiment": {
+                "score": "0.242295", 
+                "type": "positive"
+            }, 
+            "text": "attorney"
+        }, 
+        {
+            "relevance": "0.290693", 
+            "count": "1", 
+            "type": "Quantity", 
+            "sentiment": {
+                "type": "neutral"
+            }, 
+            "text": "five days"
+        }
+    ], 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html"
+}
+
+## Entities ##
+text:  Chief Justice John Roberts
+type:  Person
+relevance:  0.787497
+sentiment:  positive
+sentiment score: 0.290716
+
+text:  Anthony Elonis
+type:  Person
+relevance:  0.68244
+sentiment:  negative
+sentiment score: -0.234187
+
+text:  chat room
+type:  FieldTerminology
+relevance:  0.550999
+sentiment:  negative
+sentiment score: -0.242385
+
+text:  Justice Ruth Bader Ginsburg
+type:  Person
+relevance:  0.50815
+sentiment:  negative
+sentiment score: -0.326279
+
+text:  Eminem
+type:  Person
+relevance:  0.498861
+sentiment:  neutral
+
+text:  Facebook
+type:  Company
+relevance:  0.495382
+sentiment:  negative
+sentiment score: -0.557738
+
+text:  Michael Dreeben
+type:  Person
+relevance:  0.465509
+sentiment:  positive
+sentiment score: 0.242295
+
+text:  Supreme Court
+type:  Organization
+relevance:  0.405244
+sentiment:  negative
+sentiment score: -0.641078
+
+text:  WASHINGTON
+type:  City
+relevance:  0.36095
+sentiment:  neutral
+
+text:  Pennsylvania
+type:  StateOrCounty
+relevance:  0.359388
+sentiment:  negative
+sentiment score: -0.68455
+
+text:  First Amendment
+type:  FieldTerminology
+relevance:  0.356426
+sentiment:  neutral
+
+text:  Domestic violence
+type:  FieldTerminology
+relevance:  0.352762
+sentiment:  negative
+sentiment score: -0.602516
+
+text:  FBI
+type:  Organization
+relevance:  0.345581
+sentiment:  negative
+sentiment score: -0.711837
+
+text:  Alito
+type:  Person
+relevance:  0.339691
+sentiment:  negative
+sentiment score: -0.388244
+
+text:  Justice Department
+type:  Organization
+relevance:  0.336931
+sentiment:  positive
+sentiment score: 0.242295
+
+text:  federal law
+type:  FieldTerminology
+relevance:  0.334729
+sentiment:  negative
+sentiment score: -0.709627
+
+text:  stent
+type:  Degree
+relevance:  0.332624
+sentiment:  negative
+sentiment score: -0.326279
+
+text:  Elwood
+type:  Person
+relevance:  0.326892
+sentiment:  positive
+sentiment score: 0.613636
+
+text:  Twitter
+type:  Company
+relevance:  0.305117
+sentiment:  neutral
+
+text:  social media
+type:  FieldTerminology
+relevance:  0.295131
+sentiment:  neutral
+
+text:  attorney
+type:  JobTitle
+relevance:  0.290693
+sentiment:  positive
+sentiment score: 0.242295
+
+text:  five days
+type:  Quantity
+relevance:  0.290693
+sentiment:  neutral
+
+
+
+
+############################################
+#   Keyword Extraction Example             #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "totalTransactions": "2", 
+    "language": "english", 
+    "url": "", 
+    "keywords": [
+        {
+            "relevance": "0.911508", 
+            "text": "video-game chat rooms", 
+            "sentiment": {
+                "mixed": "1", 
+                "score": "-0.207423", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.675931", 
+            "text": "video-game chat room", 
+            "sentiment": {
+                "score": "-0.519732", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.648727", 
+            "text": "reasonable person", 
+            "sentiment": {
+                "score": "0.276181", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.634067", 
+            "text": "Justice John Roberts", 
+            "sentiment": {
+                "score": "0.345459", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.632591", 
+            "text": "Ruth Bader Ginsburg", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.600222", 
+            "text": "Department attorney Michael", 
+            "sentiment": {
+                "score": "0.242295", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.590803", 
+            "text": "Domestic violence advocacy", 
+            "sentiment": {
+                "score": "-0.602516", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.577172", 
+            "text": "protective order", 
+            "sentiment": {
+                "score": "0.222038", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.534693", 
+            "text": "rap music", 
+            "sentiment": {
+                "score": "-0.552882", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.530838", 
+            "text": "rap lyrics", 
+            "sentiment": {
+                "score": "-0.454343", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.517113", 
+            "text": "violent threats", 
+            "sentiment": {
+                "score": "-0.68455", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.510851", 
+            "text": "illegal threats", 
+            "sentiment": {
+                "score": "-0.641078", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.506325", 
+            "text": "crude comments", 
+            "sentiment": {
+                "score": "-0.552882", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.50422", 
+            "text": "violent lyrics", 
+            "sentiment": {
+                "score": "-0.552882", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.499085", 
+            "text": "rap stars", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.497801", 
+            "text": "rap artist", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.495755", 
+            "text": "free speech", 
+            "sentiment": {
+                "score": "-0.641078", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.495497", 
+            "text": "digital age", 
+            "sentiment": {
+                "score": "-0.641078", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.494316", 
+            "text": "Pennsylvania man", 
+            "sentiment": {
+                "score": "-0.68455", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.492113", 
+            "text": "Eminem song", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.492021", 
+            "text": "FBI agent", 
+            "sentiment": {
+                "score": "-0.711837", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.489861", 
+            "text": "Anthony Elonis", 
+            "sentiment": {
+                "score": "-0.462299", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.488959", 
+            "text": "Supreme Court", 
+            "sentiment": {
+                "score": "-0.641078", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.486136", 
+            "text": "pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.482355", 
+            "text": "sarcastic comments", 
+            "sentiment": {
+                "score": "-0.519732", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.478249", 
+            "text": "little agreement", 
+            "sentiment": {
+                "score": "-0.636375", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.475794", 
+            "text": "proper test", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.475081", 
+            "text": "federal law", 
+            "sentiment": {
+                "score": "-0.709627", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.471138", 
+            "text": "better standard", 
+            "sentiment": {
+                "score": "0.613636", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.470591", 
+            "text": "free-speech advocates", 
+            "sentiment": {
+                "score": "-0.430926", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.465769", 
+            "text": "recent example", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.465744", 
+            "text": "different view", 
+            "sentiment": {
+                "score": "0.613636", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.464761", 
+            "text": "protective purpose", 
+            "sentiment": {
+                "score": "-0.602516", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.464137", 
+            "text": "graphic language", 
+            "sentiment": {
+                "score": "-0.661915", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.462504", 
+            "text": "social media", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.461545", 
+            "text": "nice bed", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }, 
+        {
+            "relevance": "0.460139", 
+            "text": "widespread attention", 
+            "sentiment": {
+                "score": "-0.430926", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.454623", 
+            "text": "lengthy post", 
+            "sentiment": {
+                "score": "0.222038", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.451059", 
+            "text": "court proceedings", 
+            "sentiment": {
+                "score": "-0.207638", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.42676", 
+            "text": "government", 
+            "sentiment": {
+                "score": "0.345459", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.40474", 
+            "text": "wife", 
+            "sentiment": {
+                "score": "-0.571054", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.403499", 
+            "text": "justices", 
+            "sentiment": {
+                "score": "-0.68455", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.38074", 
+            "text": "Facebook", 
+            "sentiment": {
+                "score": "-0.557738", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.367823", 
+            "text": "teenagers", 
+            "sentiment": {
+                "mixed": "1", 
+                "score": "-0.207423", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.365297", 
+            "text": "jury", 
+            "sentiment": {
+                "score": "-0.709627", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.360414", 
+            "text": "case", 
+            "sentiment": {
+                "score": "-0.557738", 
+                "type": "negative"
+            }
+        }, 
+        {
+            "relevance": "0.355337", 
+            "text": "speaker", 
+            "sentiment": {
+                "mixed": "1", 
+                "score": "0.0111203", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.354822", 
+            "text": "Dreeben", 
+            "sentiment": {
+                "score": "0.242295", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.352819", 
+            "text": "context", 
+            "sentiment": {
+                "score": "0.613636", 
+                "type": "positive"
+            }
+        }, 
+        {
+            "relevance": "0.343827", 
+            "text": "Da-da", 
+            "sentiment": {
+                "type": "neutral"
+            }
+        }
+    ], 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html"
+}
+
+## Keywords ##
+text:  video-game chat rooms
+relevance:  0.911508
+sentiment:  negative
+sentiment score: -0.207423
+
+text:  video-game chat room
+relevance:  0.675931
+sentiment:  negative
+sentiment score: -0.519732
+
+text:  reasonable person
+relevance:  0.648727
+sentiment:  positive
+sentiment score: 0.276181
+
+text:  Justice John Roberts
+relevance:  0.634067
+sentiment:  positive
+sentiment score: 0.345459
+
+text:  Ruth Bader Ginsburg
+relevance:  0.632591
+sentiment:  neutral
+
+text:  Department attorney Michael
+relevance:  0.600222
+sentiment:  positive
+sentiment score: 0.242295
+
+text:  Domestic violence advocacy
+relevance:  0.590803
+sentiment:  negative
+sentiment score: -0.602516
+
+text:  protective order
+relevance:  0.577172
+sentiment:  positive
+sentiment score: 0.222038
+
+text:  rap music
+relevance:  0.534693
+sentiment:  negative
+sentiment score: -0.552882
+
+text:  rap lyrics
+relevance:  0.530838
+sentiment:  negative
+sentiment score: -0.454343
+
+text:  violent threats
+relevance:  0.517113
+sentiment:  negative
+sentiment score: -0.68455
+
+text:  illegal threats
+relevance:  0.510851
+sentiment:  negative
+sentiment score: -0.641078
+
+text:  crude comments
+relevance:  0.506325
+sentiment:  negative
+sentiment score: -0.552882
+
+text:  violent lyrics
+relevance:  0.50422
+sentiment:  negative
+sentiment score: -0.552882
+
+text:  rap stars
+relevance:  0.499085
+sentiment:  neutral
+
+text:  rap artist
+relevance:  0.497801
+sentiment:  neutral
+
+text:  free speech
+relevance:  0.495755
+sentiment:  negative
+sentiment score: -0.641078
+
+text:  digital age
+relevance:  0.495497
+sentiment:  negative
+sentiment score: -0.641078
+
+text:  Pennsylvania man
+relevance:  0.494316
+sentiment:  negative
+sentiment score: -0.68455
+
+text:  Eminem song
+relevance:  0.492113
+sentiment:  neutral
+
+text:  FBI agent
+relevance:  0.492021
+sentiment:  negative
+sentiment score: -0.711837
+
+text:  Anthony Elonis
+relevance:  0.489861
+sentiment:  negative
+sentiment score: -0.462299
+
+text:  Supreme Court
+relevance:  0.488959
+sentiment:  negative
+sentiment score: -0.641078
+
+text:  pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.
+relevance:  0.486136
+sentiment:  neutral
+
+text:  sarcastic comments
+relevance:  0.482355
+sentiment:  negative
+sentiment score: -0.519732
+
+text:  little agreement
+relevance:  0.478249
+sentiment:  negative
+sentiment score: -0.636375
+
+text:  proper test
+relevance:  0.475794
+sentiment:  neutral
+
+text:  federal law
+relevance:  0.475081
+sentiment:  negative
+sentiment score: -0.709627
+
+text:  better standard
+relevance:  0.471138
+sentiment:  positive
+sentiment score: 0.613636
+
+text:  free-speech advocates
+relevance:  0.470591
+sentiment:  negative
+sentiment score: -0.430926
+
+text:  recent example
+relevance:  0.465769
+sentiment:  neutral
+
+text:  different view
+relevance:  0.465744
+sentiment:  positive
+sentiment score: 0.613636
+
+text:  protective purpose
+relevance:  0.464761
+sentiment:  negative
+sentiment score: -0.602516
+
+text:  graphic language
+relevance:  0.464137
+sentiment:  negative
+sentiment score: -0.661915
+
+text:  social media
+relevance:  0.462504
+sentiment:  neutral
+
+text:  nice bed
+relevance:  0.461545
+sentiment:  neutral
+
+text:  widespread attention
+relevance:  0.460139
+sentiment:  negative
+sentiment score: -0.430926
+
+text:  lengthy post
+relevance:  0.454623
+sentiment:  positive
+sentiment score: 0.222038
+
+text:  court proceedings
+relevance:  0.451059
+sentiment:  negative
+sentiment score: -0.207638
+
+text:  government
+relevance:  0.42676
+sentiment:  positive
+sentiment score: 0.345459
+
+text:  wife
+relevance:  0.40474
+sentiment:  negative
+sentiment score: -0.571054
+
+text:  justices
+relevance:  0.403499
+sentiment:  negative
+sentiment score: -0.68455
+
+text:  Facebook
+relevance:  0.38074
+sentiment:  negative
+sentiment score: -0.557738
+
+text:  teenagers
+relevance:  0.367823
+sentiment:  negative
+sentiment score: -0.207423
+
+text:  jury
+relevance:  0.365297
+sentiment:  negative
+sentiment score: -0.709627
+
+text:  case
+relevance:  0.360414
+sentiment:  negative
+sentiment score: -0.557738
+
+text:  speaker
+relevance:  0.355337
+sentiment:  positive
+sentiment score: 0.0111203
+
+text:  Dreeben
+relevance:  0.354822
+sentiment:  positive
+sentiment score: 0.242295
+
+text:  context
+relevance:  0.352819
+sentiment:  positive
+sentiment score: 0.613636
+
+text:  Da-da
+relevance:  0.343827
+sentiment:  neutral
+
+
+
+
+############################################
+#   Concept Tagging Example                #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "", 
+    "language": "english", 
+    "concepts": [
+        {
+            "website": "http://www.supremecourtus.gov/", 
+            "yago": "http://yago-knowledge.org/resource/Supreme_Court_of_the_United_States", 
+            "text": "Supreme Court of the United States", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvegiTpwpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/Supreme_Court_of_the_United_States", 
+            "freebase": "http://rdf.freebase.com/ns/m.07sz1", 
+            "relevance": "0.982768", 
+            "geo": "38.890708333333336 -77.00434444444444"
+        }, 
+        {
+            "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+            "yago": "http://yago-knowledge.org/resource/Ruth_Bader_Ginsburg", 
+            "text": "Ruth Bader Ginsburg", 
+            "dbpedia": "http://dbpedia.org/resource/Ruth_Bader_Ginsburg", 
+            "freebase": "http://rdf.freebase.com/ns/m.0199pk", 
+            "relevance": "0.861047"
+        }, 
+        {
+            "relevance": "0.7251", 
+            "text": "John G. Roberts", 
+            "dbpedia": "http://dbpedia.org/resource/John_G._Roberts"
+        }, 
+        {
+            "website": "http://www.usa.gov/", 
+            "yago": "http://yago-knowledge.org/resource/United_States", 
+            "text": "United States", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/United_States", 
+            "freebase": "http://rdf.freebase.com/ns/m.09c7w0", 
+            "relevance": "0.66707", 
+            "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States"
+        }, 
+        {
+            "relevance": "0.553112", 
+            "text": "Rapping", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rzQXDcip_QdiIBoeuUEmDxA", 
+            "dbpedia": "http://dbpedia.org/resource/Rapping", 
+            "freebase": "http://rdf.freebase.com/ns/m.06bxc"
+        }, 
+        {
+            "relevance": "0.486803", 
+            "text": "Domestic violence", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvuWhp5wpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/Domestic_violence", 
+            "freebase": "http://rdf.freebase.com/ns/m.02gr_"
+        }, 
+        {
+            "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+            "yago": "http://yago-knowledge.org/resource/Stephen_Breyer", 
+            "text": "Stephen Breyer", 
+            "dbpedia": "http://dbpedia.org/resource/Stephen_Breyer", 
+            "freebase": "http://rdf.freebase.com/ns/m.016m0v", 
+            "relevance": "0.468485"
+        }, 
+        {
+            "website": "http://www.eminem.com/", 
+            "yago": "http://yago-knowledge.org/resource/Eminem", 
+            "text": "Eminem", 
+            "musicBrainz": "http://zitgist.com/music/artist/b95ce3ff-3d05-4e87-9e01-c97b66af13d4", 
+            "dbpedia": "http://dbpedia.org/resource/Eminem", 
+            "freebase": "http://rdf.freebase.com/ns/m.01vsgrn", 
+            "relevance": "0.456368"
+        }
+    ]
+}
+
+## Concepts ##
+text:  Supreme Court of the United States
+relevance:  0.982768
+
+text:  Ruth Bader Ginsburg
+relevance:  0.861047
+
+text:  John G. Roberts
+relevance:  0.7251
+
+text:  United States
+relevance:  0.66707
+
+text:  Rapping
+relevance:  0.553112
+
+text:  Domestic violence
+relevance:  0.486803
+
+text:  Stephen Breyer
+relevance:  0.468485
+
+text:  Eminem
+relevance:  0.456368
+
+
+
+
+############################################
+#   Sentiment Analysis Example             #
+############################################
+
+
+Processing html:  <!DOCTYPE HTML><html><head><link rel="stylesheet" type="text/css" href="http://extras.mnginteractive.com/live/css/site67/bartertown.css"><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><link rel="canonical" href='http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide'/><link rel="stylesheet" type="text/css" href="http://extras.mnginteractive.com/live/css/site67/bartertown-article.css" /><meta name="description" content="The Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age. "><meta property="og:description" content="The Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age. "><meta property="twitter:description" content="The Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age. "><meta name="news_keywords" content="crime,homicides,murders,Bay Area,San Jose,crime map,court news,judicial,SJPD,police">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Threatening Facebook posts as free speech? Supreme Court to decide" />
+<meta name="twitter:card" value="summary" />
+<meta property="twitter:title" content="Threatening Facebook posts as free speech? Supreme Court to decide" />
+<meta name="twitter:site" value="@mercnews" />
+<meta property="og:image" content="http://extras.mnginteractive.com/live/media/site568/2014/1201/20141201__1202facebook~1.JPG" />
+<meta property="twitter:image" content="http://extras.mnginteractive.com/live/media/site568/2014/1201/20141201__1202facebook~1.JPG" />
+<meta property="og:url" content="http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide" /><meta property="twitter:url" content="http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide" /><title>Threatening Facebook posts as free speech? Supreme Court to decide - San Jose Mercury News</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="verify-v1" content="wz/zVLp1jiv0/wO/OSjrAFwPhKfxcCFdcUwpg4ANXbQ=" />
+<meta name="y_key" content="8cb7e37d57339cb3" />
+<meta name="verify-v1" content="cgRcFjhKBsmYEfbwi2qePjkOzvy8XWnvfTpK75N3BmQ=" />
+<meta name="msvalidate.01" content="4B535F7EB2971D1FCBA5D1D3E3E292C3" />
+<meta property="fb:page_id" content="63095136336" />
+<meta property="fb:admins" content="702185068,661331474,100001900804139" />
+<meta property="fb:app_id" content="328320203930030" />
+<meta name="google-site-verification" content="jvnaFa4kq5tUDhFMQZ84bDI74A2qnu0gfhxZjZXlkko" />
+
+<!-- NDN  -->
+<script type="text/javascript" async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+
+<!-- JOL -->
+<script type="text/javascript" src="http://extras.mnginteractive.com/live/js/JOL/mercurynewsPressPlus.js"></script>
+
+<script type="text/javascript" src="http://extras.mercurynews.com/media/js/sjmn_all_third_party.js"></script>
+<script type="text/javascript" src="http://extras.mercurynews.com/media/js/sjmn_misc_scriptwell.js"></script>
+<script async type="text/javascript" src="http://extras.mnginteractive.com/live/js/metaRefresh.js"></script>
+
+<!--DTM-->
+<script src="//assets.adobedtm.com/891d1ce5446bbce2687a12c1b724985a8b1df83a/satelliteLib-24d7d2c76ffad40ec94f85cea77bc05078ac3b66-staging.js"></script>
+<meta property="twitter:app:name:iphone" content="San Jose Mercury News for iPhone" />
+<meta property="twitter:app:name:ipad" content="San Jose Mercury News for iPad" />
+<meta property="twitter:app:name:googleplay" content="San Jose Mercury News" />
+<meta property="twitter:app:id:iphone" content="id479955259" />
+<meta property="twitter:app:id:ipad" content="id551437906" />
+<meta property="twitter:app:id:googleplay" content="com.spreedinc.providers.californianewspaperpartnership.sanjosemercurynews" /><!-- get profile info --><!--  user not logged in (javascript) --><script language="JavaScript" type="text/javascript">
+				MNGiRegistrationLoginStatus = "out";
+				MNGiRegistrationUserName = "";
+				MNGiRegistrationEmail = "";
+			</script><!-- end get profile info --><script language="JavaScript" type="text/javascript">
+	MNGiRegistrationLoginUrl = "https://secure.passport.mnginteractive.com/mngi/servletDispatch/ErightsPassportServlet.dyn";
+	MNGiRegistrationUrl = "https://secure.www.mercurynews.com";
+	MNGiIDCookieName = "MNGID";
+</script><script type="text/javascript" src="http://extras.mnginteractive.com/live/js/mngiads/AdsInclude.js"></script><script type="text/javascript" src="http://extras.mnginteractive.com/live/js/otherinc/pop-window.js"></script><script type="text/javascript">
+										(function(){							
+										var src = (('https:'==document.location.protocol)?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';							
+										document.write('<scr'+'ipt src="'+src+'"></scr'+'ipt>');							
+										})();							
+									</script><script type="text/javascript">
+									googletag.pubads().setTargeting('page',['article']);
+									</script><!-- Site CSS = http://extras.mnginteractive.com/live/css/site568/mn_Global.css --><style type="text/css">
+                            #bodyMain  { z-index:10; position: absolute; top: 0px;  left: 0px; width: 100%;  visibility: visible; }
+                            #headerSub { z-index:100; position: absolute; top: 84px; left:10px; width: 250px; visibility:hidden; }
+                            </style><meta name="ag:canon" content="SanJoseMercuryNews:article:27043759:view"><!-- Load the DFM API core Javascript library --><script type="text/javascript" src="http://local.dailynews.com/common/dfm/assets/js/dfm-core-level1.min.js"></script><script type="text/javascript" src="http://local.dailynews.com/common/dfm/assets/js/dfm-core-level2.min.js"></script><!-- Rendered DFM API tags --><script type="text/javascript">	
+	dfm.api("data","siteId", "568");
+    dfm.api("data","siteName", "San Jose Mercury News");
+    dfm.api("data","pageURL", "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide"); 
+    dfm.api("data","pageType", "article");
+    dfm.api("data","sectionName", "Crime and Courts");
+    dfm.api("data","NetworkId", "8013"); 	
+    dfm.api("data","contentId", "27043759");	
+	dfm.api("data","pubDate", "2014-12-01T10:03:06-0700");
+	dfm.api("data","startDate", "2014-12-01T10:02:09-0700");
+	dfm.api("data","endDate", "2024-12-01T14:06:28-0700");
+	dfm.api("data","modificationDate", "2014-12-01T14:06:33-0700");
+	dfm.api("data","byline", "By Sam HananelAssociated");
+	dfm.api("data","abstract", "The Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.");
+	dfm.api("data","canonicalURL", "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide"); 	
+    dfm.api("data","Taxonomy1", "News"); 	
+    dfm.api("data","Taxonomy2", "Crime"); 	
+    dfm.api("data","Taxonomy3", ""); 	
+    dfm.api("data","Taxonomy4", ""); 
+	dfm.api("data","keywords", ":biz:biz-dfm:facebook:sv2020news:whatsnew:bizbreaking: :crime:natl:");
+	dfm.api("data","title", "Threatening Facebook posts as free speech? Supreme Court to decide");
+	dfm.api("data","siteDomain", "mercurynews.com");
+	dfm.api("data","actualDomain", "www.mercurynews.com");	
+	</script><!-- Rendered GSA meta tags --><meta property="pubDate" content="2014-12-01T10:03:06-0700"><meta property="startDate" content="2014-12-01T10:02:09-0700"><meta property="endDate" content="2024-12-01T14:06:28-0700"><meta property="modificationDate" content="2014-12-01T14:06:33-0700"><meta property="byline" content="By Sam HananelAssociated"><meta name="twitter:domain" value="mercurynews.com"></head><body class="bodyStyle"><span id='mn_Global'><link type='text/css' rel='stylesheet' href='http://extras.mnginteractive.com/live/css/site568/mn_Global.css'><div class="contentStyle"><script type="text/javascript" language="javascript">
+
+function getPremiumNotice() {
+    return document.getElementById("premiumNotice");
+}
+
+/**
+ * Gets the "real" position of an element
+ * Courtesy Peter-Paul Koch 
+ * http://www.quirksmode.org/js/findpos.html
+ */         
+function findPos(obj) {
+    var curleft = curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curleft += obj.offsetLeft;
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+        return [curleft,curtop];
+    }
+}
+
+/**
+ * Shows or hides the premium notice
+ */
+function hoverPop(mode, element) {
+    var realPos = findPos(element);
+    if (mode == "show") {
+      getPremiumNotice().style.top = realPos[1] - 15;
+      getPremiumNotice().style.left = realPos[0] + 25;
+      getPremiumNotice().innerHTML="Premium Content";
+      getPremiumNotice().style.display = "block"; 
+    } else if (mode == "hide") {
+      getPremiumNotice().style.display = "none"; 
+    }  
+}
+
+</script><div id="premiumNotice"></div><div id="wait" style="position: absolute; top: 200; left: 200; visibility:hidden; font-size: 1pt; color: white;"><!-- SiteCatalyst code version: H.17
+            Copyright 1997-2005 Omniture, Inc. More info available at
+            http://www.omniture.com --><script language="JavaScript"><!--//
+            /* Specify the Report Suite ID(s) to track here */
+            var s_account="mngimercurynews";
+            //--></script><!-- Replaced SiteCatalystCode_H_22_1.js with SiteCatalystCode_H_22_1_NC.js --><script type="text/javascript" language="JavaScript" src='http://extras.mnginteractive.com/live/js/omniture/SiteCatalystCode_H_22_1_NC.js'></script><script type="text/javascript" language="JavaScript" src='http://extras.mnginteractive.com/live/js/omniture/OmniUserObjAndHelper.js'></script><script language="JavaScript"><!--
+            //Local Variables
+            var PaperBrand = getBrand2(s_account);
+            var PageName = "Threatening Facebook posts as free speech? Supreme Court to decide";
+            var SectionName = "Crime and Courts";
+            var ArticleTitle = "";
+            
+            ArticleTitle = "Threatening Facebook posts as free speech? Supreme Court to decide";
+            
+			var FriendlyName = "Crime and Courts / Threatening Facebook posts as free speech? Supreme Court to decide";
+			var domainName = getDomainName();
+			userObj = new omniObj();
+			userObj.load();
+			userObj.update();
+			userObj.save();
+            /* You may give each page an identifying name, server, and channel on
+            the next lines. */
+
+			s.pageName=FriendlyName;
+            s.channel="Crime and Courts"; // Same as prop1
+            s.server="";// Blank
+            s.pageType=""; // Error pages ONLY
+            
+            s.prop1="D=g";
+            beanprop2 = ("" != "") && ("" != null) ? "" : "?";
+            var escbeanprop2 = escape(beanprop2);
+            var unescbeanprop2 = unescape(escbeanprop2);
+            var articleId = "";
+            
+ 			articleId = 27043759;
+            
+            beanprop3 = ("" != "") && ("" != null) ? "" : "?";
+            beanprop4 = ("" != "") && ("" != null) ? "" : "?";
+			
+			if(articleId != "" && articleId != null){
+			
+            beanprop5 = ("" != "") && ("" != null) ? "" : articleId +"_" +ArticleTitle;
+			
+			} else {
+			
+			beanprop5 = "?" ;  
+			
+			}
+			
+            
+                    //s.prop2=""; // Sub section 1
+                    s.prop2='D=ch+' + "\"/" + unescbeanprop2 + "\"";
+                
+                    //s.prop3=""; // Sub section 2
+                    s.prop3='D=ch+' + "\"/" + unescbeanprop2 + "/" + beanprop3 + "\"";
+                
+                    //s.prop4=""; // Sub section 3
+                    s.prop4='D=ch+' + "\"/" + unescbeanprop2 + "/"+ beanprop3 + "/"+ beanprop4 + "\""; // Sub section 3
+                
+                    s.prop5='D=ch+' + "\"/" + unescbeanprop2 + "/" + beanprop3 + "/" + beanprop4 + "/" + beanprop5 + "\""; // Sub section 4
+                
+                        
+            s.prop6=""; // Global - Section
+            s.prop7=""; // Global - Sub section 1
+            s.prop8=""; // Global - Sub section 2
+            var sourceVal = ""; // Source of request, i.e. RSS, flash, etc...
+            if(articleId != '' && articleId != null){
+	            if(s.prop9 == '' || s.prop9 == null){
+	            s.prop9 = sourceVal;
+	            }
+            }
+            s.prop10=""; // Reserved for RSS
+            if(articleId != '' && articleId != null){
+            	s.prop11=ArticleTitle=="null"?"":'D="'+domainName+' / "+v26+" / "+c50';
+            }
+            s.prop12="&lt;p class='bylinejb'&gt;By Sam Hananel&lt;br /&gt;&lt;/p&gt;&lt;p class='bylineaffiliation'&gt;Associated Press"; //Byline
+            s.prop13="Active"; // Reserved for article
+            s.prop14=""; // Reserved for article
+            s.prop15=""; // Reserved for article
+            s.prop16="";	// Search
+            s.prop17="";	// Search
+            s.prop18="";	// Search
+            s.prop19="";	// Search
+            s.prop20=""; // Reserved for Search
+            s.prop21=""; // Reserved for Search
+            s.prop22=""; // Reserved for Search
+            s.prop23=""; // Reserved for Search
+            s.prop24=""; // Reserved for Search
+            s.prop25=""; // Reserved for Search
+            s.prop26=""; // 3rd Party Vendors
+            s.prop27=""; // OneSpot
+            s.prop28=""; // Blank
+            //s.prop29=""; // Blank
+            if(s.prop29 == null || s.prop29 == ''){
+            s.prop29="";
+            }
+            s.prop30=""; // Form Analysis Plugin
+            s.prop31=""; // Blank
+            s.prop32=""; // Blank
+            s.prop33=ArticleTitle=="null"?'D=c40+" / "+c43':'D=c40+" / "+c50+" / "+c9';
+            s.prop34=ArticleTitle=="null"?'D=c40+" / "+c43':'D=c40+" / "+c43+" / "+c50';
+            s.prop35=ArticleTitle=="null"?'D=v18=" / "+c40+" / "+c43':'D=v18+" / "+c40+" / "+c50';
+            s.prop36=isCampaign(getCampaignValue("EADID")+getCampaignValue("CREF"), PaperBrand, PageName, ArticleTitle); // Campaign Tracking Code  + Paper Brand + Page Name
+            s.prop37=isCampaign(getCampaignValue("IADID")+getCampaignValue("SOURCE"), PaperBrand, PageName, ArticleTitle); // Affiliate ID + Paper Brand + Page Name
+            s.prop38=isCampaign(getCampaignValue("PARTNERID"), PaperBrand, PageName,ArticleTitle); // Internal Referral ID + Paper Brand + Page Name
+            s.prop39="";                                                             // Search Engine + Keywords + Paper Brand + Page Name (populated by functions.js)
+            s.prop40=PaperBrand;                                                     // Paper Brand
+            s.prop41="";                                                             // Blank
+            s.prop42="";
+            s.prop43=SectionName; //
+            s.prop44=ArticleTitle=="null"?"":'D=c40+" / "+c43+" / "+v26';
+            s.prop45=ArticleTitle=="null"?"":'D=c40+" / "+c43+" / "+c12';
+            s.prop46=getArticleHelperPage(domainName,"27043759",location.href,ArticleTitle); // ArticleID + Special Page Name + Article Title
+			s.prop47=""; // Search
+			s.prop48=""; // Blank
+			s.prop49=""; // Blank
+			s.prop50=ArticleTitle;
+			/* E-commerce Variables */
+            s.campaign=getCiQueryString("EADID")+getCiQueryString("CREF");          //External Campaign - ?EADID=id
+            s.state="";
+            s.zip="";
+            s.events=getEvents(ArticleTitle, s.events);
+            s.products="";
+            s.purchaseID="";
+            s.eVar1=getCiQueryString("PARTNERID");                                  // Internal Campaign - ?PID=id
+            s.eVar2=getCiQueryString("IADID")+getCiQueryString("SOURCE");           // Affiliate ID - ?IADID=id
+            s.eVar3=getBrandOnChange(PaperBrand);                                             //Paper Brand
+            s.eVar4="D=pageName";
+            s.eVar5="";
+            s.eVar6="";
+            s.eVar7="";
+            s.eVar8="";
+            s.eVar9="";
+            s.eVar10="";
+            s.eVar11="";
+            s.eVar12="";
+            s.eVar13="";
+            s.eVar14=userObj.fPage|userObj.conPage|userObj.loginConPage?userObj.vType:''; //Visitory Type
+            s.eVar15=userObj.fPage|userObj.userIdChange?userObj.userId:'';                     // User ID
+            s.eVar16=userObj.conPage?userObj.rType:'';
+            s.eVar17="";
+            s.eVar18=getUserType();
+            s.eVar19=userObj.fPage|userObj.conPage|userObj.aaPage?userObj.regStatus:''; //Registration Status
+            s.eVar20=""; // Search
+            s.eVar21="";
+            s.eVar22="";
+            s.eVar23="";                                                      // Refinements
+            s.eVar24="D=c43";
+            s.eVar25="";
+            s.eVar26="27043759";
+            s.eVar50=getCiQueryString("AADID");
+            //--></script><script type="text/javascript" language="JavaScript" src='http://extras.mnginteractive.com/live/js/omniture/functions.js'></script><script><!--//
+			//---------------------------------------------
+            /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+            var s_code=s.t();if(s_code)document.write(s_code)//--></script><script language="JavaScript"><!--
+            if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+            //--></script><noscript><img
+            src="http://mngimercurynews.112.2O7.net/b/ss/mngimercurynews/1/H.17--NS/0"
+            height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/--><!-- End SiteCatalyst code version: H.17 --></div><!-- MNGi Section Template: Template_01 jsp fragment v2.0--><span id="MNGiSection"><div id="regionParent" class="regionParent"><div id="preHeader" class="preHeaderRegion"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-15 --><div id='dfp-15'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[728,90],[970,90]], 'dfp-15').addService(googletag.pubads()).setTargeting('pos',['top_leaderboard']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-15');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-15 --></td><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-19 --><div id='dfp-19'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[100,100]], 'dfp-19').addService(googletag.pubads()).setTargeting('pos',['wallpaper']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-19');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-19 --></td><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23159096 --> <!-- ###START-FFglobalheader### -->
+<!-- BartertownGlobal - Header JS ( 23159096 ) -->
+<script type="text/javascript">
+document.write("<style type='text/css'> #footer, #mngiFooter { display:none; } </style>");
+
+// Only load jquery if it hasn't been yet. We need this here because dfm-core relies on it.
+if ( typeof $ === 'undefined' )
+{
+var script = document.createElement( 'script' );
+script.type = 'text/javascript';
+script.src = 'http://local.denverpost.com/common/jquery/jquery-min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+// Older IEs do not have native trim() and map() 
+
+if (!Array.prototype.map) {
+  Array.prototype.map = function(callback, thisArg) {
+    var T, A, k;
+    if (this == null) {
+      throw new TypeError(" this is null or not defined");
+    }
+    var O = Object(this);
+    var len = O.length >>> 0;
+    if (typeof callback !== "function") {
+      throw new TypeError(callback + " is not a function");
+    }
+    if (thisArg) {
+      T = thisArg;
+    }
+    A = new Array(len);
+    k = 0;
+    while(k < len) {
+      var kValue, mappedValue;
+      if (k in O) {
+        kValue = O[ k ];
+        mappedValue = callback.call(T, kValue, k, O);
+        A[ k ] = mappedValue;
+      }
+      k++;
+    }
+    return A;
+  };      
+}
+
+if(!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^\s+|\s+$/g,'');
+  };
+}
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:700|Oxygen:400,300,700" />
+
+<script type="text/javascript">
+if (!dfm.env.domain) {
+   dfm.env.domain = (location.host.match(/([^.]+)\.\w{2,3}(?:\.\w{2})?$/) || [])[1];
+}
+
+if ( document.location.hash == '#dev' )
+{
+dfm.$('head').append('<link rel="stylesheet" type="text/css" href="http://extras.mnginteractive.com/live/css/site67/bartertown-dev.css" />');
+}
+</script>
+
+<script async src="http://extras.mnginteractive.com/live/js/weather/custom_weather_access.js"></script>
+<script async src="http://local.digitalfirstmedia.com/common/dfm/assets/js/accuweather/accuweather_access.js"></script>
+<script async src="http://local.digitalfirstmedia.com/common/dfm/dfm-nav/vendorSpecific/accuweather.js"></script>
+<script src="http://local.medianewsgroup.com/common/dfm/header.js"></script>
+<!-- ###END-FFglobalheader### --><!-- END FREEFORM RENDER, ID 23159096 --></td><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-28 --><div id='dfp-28'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[1,1]], 'dfp-28').addService(googletag.pubads()).setTargeting('pos',['interstitial']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-28');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-28 --></td></tr></table></div><div class="clear"></div><div id="header" class="headerRegion"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23189994 --> 
+<div id="dfmHeader" style="height:126px;"><!--Header goes in here--></div>
+<div id="dfmFooter" style="display:none;"></div>
+<script type="text/javascript" src="http://local.denverpost.com/common/dfm/dfm-nav/dfm-nav-core.js"></script>
+<script type="text/javascript">
+if (typeof self.SectionName  == 'undefined' || self.SectionName == 'Home' || document.location.pathname.substring(0, 3) == '/ci' ) {
+        if ( typeof console !== "undefined" ) console.log("SectionName: " + self.SectionName);
+	self.SectionName = '&nbsp;';
+}
+var tmp_domain = dfm.env.domain;
+if ( location.host.search('net') > 0 ) tmp_domain += '.net';
+dfmNav.initParams('pageTitle|' + self.SectionName,'mode|' + dfm.theMode,'site|' + tmp_domain);
+//dfm.$('#dfmPageTitle').html(self.SectionName);
+dfm.$(document).ready(function(){
+	dfm.$('div#dfmFooterPlaceholder').after(dfm.$('div#dfmFooter').show()).remove();
+});
+</script>
+
+<div id="breaking-news"></div><!-- END FREEFORM RENDER, ID 23189994 --></td><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23180553 --><!-- FF: Hot Topics -->
+<div id="hot-topics-original" style="display:none;">
+ <div class="container-fluid">
+  <ul class="inline-list">
+   <li>
+    <h6>Hot Topics:</h6>
+   </li>
+
+   <!-- EDIT: -->
+<li><a href="/news/ci_27144288/hawaii-lava-near-stores?source=inthenews">Hawaii lava</a></li>
+<li><a href="/news/ci_27139387?source=inthenews">Sydney cafe siege</a></li>
+
+
+<li><a href="http://www.mercurynews.com/entertainment/ci_27144257/camille-cosby-statement?source=inthenews">Camille Cosby's statement</a>
+
+<li><a href="http://www.mercurynews.com/entertainment/ci_27140258/taylor-swift-tour-dates?source=inthenews">Taylor Swift in Bay Area</a>
+
+
+<li><a href="/giants/ci_27135652/photos-former-giants-and-former-pitcher-barry-zito?source=inthenews">Zito's mansion</a></li>
+
+
+
+<li><a href="/news/ci_27141076/pet-tattoo-ban?source=inthenews">Pet tattoo ban</a></li>
+
+
+
+
+<li><a href="http://www.mercurynews.com/entertainment/ci_27136143/Review:-The-Hobbit:-The-Battle-of-the-Five-Armies-is-best-of-the-bunch?source=inthenews">Hobbit review</a>
+
+
+
+
+
+
+
+
+
+
+<li><a href="http://www.mercurynews.com/holidays?source=inthenews" color="red">Holidays</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ul>
+ </div> <!-- .container-fluid -->
+</div>
+
+<script type="text/javascript">
+// Move the hot topics to the right place.
+// We can't put them in the right place in the first place because
+// of region portlet limits in NGPS.
+$('#dfmHeader').after('<div id="hot-topics">' + $('#hot-topics-original').html() + '</div>');
+</script><!-- END FREEFORM RENDER, ID 23180553 --></td></tr></table></div><div class="clear"></div><div id="postHeader" class="postHeaderRegion"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23777797 --><!-- FREEFORM WAS NOT VALID.... --><!-- END FREEFORM RENDER, ID 23777797 --></td><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-27 --><div id='dfp-27'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[50,50]], 'dfp-27').addService(googletag.pubads()).setTargeting('pos',['corner_hand']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-27');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-27 --></td></tr></table></div><div class="clear"></div><div id="postHeader1" class="postHeaderRegion1"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-18 --><div id='dfp-18'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[970,30]], 'dfp-18').addService(googletag.pubads()).setTargeting('pos',['SBB']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-18');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-18 --></td></tr></table></div><div class="clear"></div><div id="outerOuterRegion"><div id="outerLeftRegion" class="outerLeftRegion"><div id="region1" class="region1"><!--IE6 fix--></div><div class="clear"></div><div id="region2and3box" class="region2and3box"><div id="region2" class="region2"><!--IE6 fix--></div><div id="region3" class="region3"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23182265 --><p id="breadcrumb">
+</p><!-- END FREEFORM RENDER, ID 23182265 --></td></tr><tr><td valign="top"><!-- BEGIN RENDERING ARTICLE DISPLAY PORTLET [ID = 4246265] --><!-- BT:Article display_11 --><script type="text/javascript" name="cleanprintloader" src="http://cache-02.cleanprint.net/cpf/cleanprint?key=San-Jose-Mercury-News"></script><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td class="articleBox" style="width:100%;"><a name="top"></a><!-- Most Viewed/Emailed Hit Counter --><img
+         src="/mngi/tracking/track?s=568&c=27043759&t=VIEWED&n=1"
+         style="display:none;"/><script language="javascript"><!--
+var remote = null;
+function popup(name,url,w,h) {
+remote = window.open(url, name, 'width=' + w + ',height=' + h +',resizable=yes,scrollbars=yes');
+if (remote != null) {
+if (remote.opener == null)
+remote.opener = self;
+window.name = 'movieWindow';
+remote.location.href = url;
+}
+}
+--></script><div class="articleOptions" align="center"><a href="#" onclick="CleanPrintPrintHtml('/portlet/article/html/fragments/print_article.jsp?articleId=27043759&siteId=568');" class="articleOptions"><img src="http://extras.mnginteractive.com/live/std/icon-print.gif" border='0'></a><a href="#" onclick="CleanPrintPrintHtml('/portlet/article/html/fragments/print_article.jsp?articleId=27043759&siteId=568');" class="articleOptions">Print</a>&nbsp;&nbsp;
+                            <a href='javascript: popup("email","/portlet/article/html/fragments/email_article.jsp?articleId=27043759&section=/crime-courts",700,500);' class="articleOptions"><img src="http://extras.mnginteractive.com/live/std/icon-email.gif" border='0'/></a><a href='javascript: popup("email","/portlet/article/html/fragments/email_article.jsp?articleId=27043759&section=/crime-courts",700,500);' class="articleOptions">Email</a>&nbsp;&nbsp;
+							<script type="text/javascript" language="JavaScript" src="http://extras.mnginteractive.com/live/js/article/changeFontSize.js"></script><span id="fontSizeChanger"><img src="http://extras.mnginteractive.com/live/std/normal.gif" class="normal" onClick="changeFontSize('normal');"><img src="http://extras.mnginteractive.com/live/std/large.gif" class="large" onClick="changeFontSize('large');"><img src="http://extras.mnginteractive.com/live/std/largest.gif" class="largest" onClick="changeFontSize('largest');"> Font Resize</span></div><!-- overline--><!--title--><h1 id="articleTitle" class="articleTitle">Threatening Facebook posts as free speech? Supreme Court to decide</h1><!--subtitle--><!--byline--><div id="articleByline" class="articleByline"><p class="bylinejb">By Sam Hananel<br /></p><p class="bylineaffiliation">Associated Press</div><!--date--><div id="articleDate" class="articleDate">Posted:
+						&nbsp;
+						12/01/2014 09:02:09 AM PST</div><!--secondary date--><div id="articleDate" class="articleSecondaryDate">Updated:
+								&nbsp;
+								12/01/2014 01:06:33 PM PST</div><br><span fd-type="start" fd-id="default"></span><div class="articlePositionHeader"><div class="articleImageBox" style="width:645px"><span class="articleImage"><a href="/portlet/article/html/imageDisplay.jsp?contentItemRelationshipId=6428592" target="_new"><img src="http://extras.mnginteractive.com/live/media/site568/2014/1201/20141201__1202facebook~1.JPG" width="645" height="421" title="John P. Elwood, attorney for Anthony D. Elonis, who claimed he was just kidding when he posted a series of graphically violent rap lyrics on Facebook about" alt="John P. Elwood, attorney for Anthony D. Elonis, who claimed he was just kidding when he posted a series of graphically violent rap lyrics on Facebook about" border="0"></a></span><div class='articleImageCaption' style='width:100%'>
+John P. Elwood, attorney for Anthony D. Elonis, who claimed he was just kidding when he posted a series of graphically violent rap lyrics on Facebook about killing his estranged wife, shooting up a kindergarten class and attacking an FBI agent, speaks to reporters outside the Supreme Court in Washington, Monday, Dec. 1, 2014. In a far-reaching case that probes the limits of free speech over the Internet, the Supreme Court considers whether violent and threatening rap lyrics posted on Facebook deserve protection under the First Amendment. (AP Photo/Susan Walsh)
+ (
+Susan Walsh
+)</div></div></div><span fd-type="end" fd-id="default"></span><div id="articleBody" class="articleBody"><div class="articleViewerGroup" id="articleViewerGroup" style="border:0px;"><script language="JavaScript">
+                					var requestedWidth = 0;
+                				</script><span class="articleEmbeddedViewerBox"></span><span fd-type="start" fd-id="default"></span><div class="articlePosition1"><div class="packagesGrpBox" style="width:200px;height:auto;"><div class="packagesHeader">More social networking</div>
+
+<div class="packagesBox"><ul>
+
+<li class="packageItem"><a href="http://www.siliconvalley.com/social-networks" style="width:184px" target="_blank">Latest news about Facebook, Twitter and other online social networks.</a></li>
+
+</ul></div></div>
+</div><span fd-type="end" fd-id="default"></span></div><script language="JavaScript">
+                				if(requestedWidth > 0){
+									document.getElementById('articleViewerGroup').style.width = requestedWidth + "px";
+                					document.getElementById('articleViewerGroup').style.margin = "0px 0px 10px 10px";
+                				}
+                			</script><span fd-type="start" fd-id="default"></span><p class="bodytext">WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age. </p><p>The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent. </p><p>Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym "Tone Dougie" were simply a way for him to vent his frustration over splitting up with his wife. </p><p>The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence. </p><p>Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use. </p><p>"How does one prove what's in somebody else's mind?" asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery. </p><div style="width:336px" class="articleEmbeddedAdBox"><hr class="articleAdRule"/><div class="articleAdHeader">Advertisement</div><!-- Begin DFP Premium ad uniqueId: dfp-EMBEDDED --><div id='dfp-EMBEDDED'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[300,250]], 'dfp-EMBEDDED').addService(googletag.pubads()).setTargeting('pos',['Cube_Article']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-EMBEDDED');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-EMBEDDED --><hr class="articleAdRule"/></div><p>Elonis attorney John Elwood said the speaker's intent could be determined by searching computer records, cell phone records and other evidence of context. He said many speakers being prosecuted "are teenagers who are essentially shooting off their mouths and making sort of ill-timed, sarcastic comments which wind up getting them thrown in jail." </p><p>As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy. </p><p>Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended. </p><p>Justice Antonin Scalia questioned whether Elonis's comments about causing physical harm in the context of a marital dispute deserve First Amendment protection. He said the government's standard "doesn't eliminate a whole lot of speech at all." </p><p>The Supreme Court has said "true threats" to harm another person are not protected speech under the First Amendment. But the court has been careful to distinguish threats from protected speech such as "political hyperbole" or "unpleasantly sharp attacks." </p><p>Justice Elena Kagan asked whether there should be a "buffer zone" under the First Amendment "to ensure that even stuff that is wrongful maybe is permitted because we don't want to chill innocent behavior." </p><p>Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat. </p><p>"You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'" Roberts said, quoting an Eminem song. </p><p>Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said. </p><p>"How do you start out if you want to be a rap artist?" Roberts asked. </p><p>In one post about his wife, Elonis said, "There's one way to love you but a thousand ways to kill you. I'm not going to rest until your body is a mess, soaked in blood and dying from all the little cuts." </p><p>Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet. </p><p>"He ramps up and escalates the threat of the statements," Dreeben said. </p><p>A female FBI agent later visited Elonis at home to ask him about the postings, and afterward Elonis took to Facebook again: "Little agent lady stood so close, took all the strength I had not to turn the b---- ghost. Pull my knife, flick my wrist and slit her throat." </p><p>The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted. </p><p>Elwood argued that Elonis had a disclaimer on his Facebook page that his comments were only for entertainment. But Justice Samuel Alito asked if Congress really intended the law "to turn on this inquiry into a really strange psychological state." </p><p>"This sounds like a roadmap for threatening a spouse and getting away with it," Alito said. </p><p>Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. </p><span fd-type="end" fd-id="default"></span></div><div class="articlePositionFooter"></div><span class="articleFooterLinks"><div class="articleOptions"><a href="#" onclick="CleanPrintPrintHtml('/portlet/article/html/fragments/print_article.jsp?articleId=27043759&siteId=568');" class="articleOptions"><img src="http://extras.mnginteractive.com/live/std/icon-print.gif" border='0'></a><a href="#" onclick="CleanPrintPrintHtml('/portlet/article/html/fragments/print_article.jsp?articleId=27043759&siteId=568');" class="articleOptions">Print</a>&nbsp;&nbsp;
+                            <a href='javascript: popup("email","/portlet/article/html/fragments/email_article.jsp?articleId=27043759&section=/crime-courts",700,500);' class="articleOptions"><img src="http://extras.mnginteractive.com/live/std/icon-email.gif" border='0'/></a><a href='javascript: popup("email","/portlet/article/html/fragments/email_article.jsp?articleId=27043759&section=/crime-courts",700,500);' class="articleOptions">Email</a>&nbsp;&nbsp;
+							<script type="text/javascript" language="JavaScript" src="http://extras.mnginteractive.com/live/js/article/changeFontSize.js"></script><span id="fontSizeChanger"><img src="http://extras.mnginteractive.com/live/std/normal.gif" class="normal" onClick="changeFontSize('normal');"><img src="http://extras.mnginteractive.com/live/std/large.gif" class="large" onClick="changeFontSize('large');"><img src="http://extras.mnginteractive.com/live/std/largest.gif" class="largest" onClick="changeFontSize('largest');"> Font Resize</span><a href="#top" class="articleOptions"><img src="http://extras.mnginteractive.com/live/std/icon-uparrow.gif" border='0'></a><a href="#top" class="articleOptions">Return to Top</a>&nbsp;&nbsp;
+	</div></span></td></tr></table><script type="text/javascript"><!--//
+	var ctg = getCookie("articleSeenOnMap");
+	if (ctg)
+	{
+		s.events="event1,event6";
+		deleteCookie("articleSeenOnMap","/");
+	}
+//--></script><!-- END PORTLET RENDERING: ARTICLE DISPLAY PORTLET --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 25807848 --><div id="ppixelA1" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-A1" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP2" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P2" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP3" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P3" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP4" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P4" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP5" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P5" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP6" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P6" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP7" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P7" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP8" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-P8" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<!-- float right -->
+
+<div id="ppixelP2r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P2r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP3r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P3r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP4r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P4r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP5r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P5r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP6r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P6r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP7r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P7r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<div id="ppixelP8r" style="float:right;">
+  <div class="ndn_embed" id="ndn-video-player-P8r" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<!-- bottom position -->
+
+<div id="ppixelBottom" style="float:left;">
+  <div class="ndn_embed" id="ndn-video-player-bottom" data-config-distributor-id="90757">
+  </div>
+</div>
+
+<script async type="text/javascript" src="//extras.mercurynews.com/scripts/ndn_ppixel.js"></script><!-- END FREEFORM RENDER, ID 25807848 --></td></tr><tr><td valign="top"><!-- BEGIN COMPLEX LISTING PORTLET [ID = 4246266] --><script language="JavaScript" type="text/javascript">
+    function refreshArticleList(theForm) {
+        theForm.submit();
+    }
+
+  </script><!-- previousNewsKey = previousNews4246266 --><!-- previousNewsParam = null --><div style="clear:both;"></div><table border="0" cellpadding="0" cellspacing="0" width="100%" class="complexListingBox"><tr><td colspan=2><div><a href="http://www.mercurynews.com/crime-courts"><span class="complexListingTitle">RELATED</span></a></div></td></tr><tr><td class="complexListingImage" valign="top" align="left"></td><td valign="top"><div><a class="complexListingMoreHeadlines" href="http://www.mercurynews.com/crime-courts">
+														MORE RELATED HEADLINES
+		        							</a></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/business/ci_27142528/san-bruno-sues-compel-release-pg-e-emails" class="complexListingLink">San Bruno sues to compel release of PG&E emails in aftermath of fatal gas explosion</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/business/ci_27142506/ataris-e-t-game-joins-smithsonian-collection" class="complexListingLink">Atari's 'E.T.' game joins Smithsonian collection</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/business/ci_27142497/fed-likely-note-gains-but-signal-no-rate" class="complexListingLink">Fed likely to note gains but signal no rate hike</a><span class="originatingSource"></span></div><!-- END ForEach --></td></tr><tr><td align="left" valign="top" class="complexListingFooter" colspan="2">&nbsp;</td></tr></table><div style="clear:both;"></div><!-- END COMPLEX LISTING PORTLET --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23182525 --><!-- we're pulling this from articles
+<script language="JavaScript" src="http://apps.digitalfirstmedia.com/apps/widgetizer/widgetizer.php?&feed=http://feeds.mercurynews.com/mngi/rss/CustomRssServlet/568/296700.xml&tpl=rss-visual-rotator&num=18&main_title=Top Stories&defImg=http://local.digitalfirstmedia.com/common/dfm/assets/img/top-stories-rotator/mercurynews.jpg&qp=topstoriesrot&rel=no&targ=n&tcache=10&acache=10&out=js" type="text/javascript"></script><i></i>
+--><!-- END FREEFORM RENDER, ID 23182525 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 25880271 --><div id="adblade"></div><script type="text/javascript">
+  var adblade_ad = {
+    "cid" : "5217-2548134374",
+    "protocol" : "http",
+    "host" : "web.adblade.com"
+  };
+  window.adblade_ad = adblade_ad;
+</script>
+<script type="text/javascript">
+  (function() {
+    var head     = document.getElementsByTagName('head')[0];
+    var script   = document.createElement('script');
+    script.type  = 'text/javascript';
+    script.src   = adblade_ad.protocol + '://' + adblade_ad.host + '/js/zones/builder.js';
+    script.async = true;
+    head.appendChild(script);
+  })();
+</script><!-- END FREEFORM RENDER, ID 25880271 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 19918559 --><!-- DAILYME RECOMMENDED WIDGET -->
+<!-- Newstogram Widget Horizontal recommender -->
+<div id="recommender"></div>
+<script async src="http://static.newstogram.com/rmv2/js/recommenderv2-h2.js" type='text/javascript'/> </script>
+ <script type="text/javascript">
+          		$( document ).ready(function() {
+
+try{
+var _recommender = new _rec(
+{ apiKey: '3a9a28a01bfda8556311d9f0fd6d03fe', cssUrl: 'http://sandbox.newstogram.com/rmv2/css/recommender_styles-h.css', title: 'Recommended for You', limit: '6', width: '650', height: '275', truncate: '48', adside: 'left', section: '0000', source:'dailyme', filter:'2', rotation:'1', customer_params:'source=dailyme' }
+);
+_recommender.renderPersonalized();
+} catch(err) {};
+});
+</script>
+<script type='text/javascript' src='http://static.newstogram.com/mercurynews_com/js/histogram.js'></script>
+ <script>Newstogram.init('3a9a28a01bfda8556311d9f0fd6d03fe');Newstogram.pageView();</script>
+<!-- End DailyMe --><!-- END FREEFORM RENDER, ID 19918559 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 24034140 --> 
+<!-- FF #24034140 -->
+<script type="text/javascript">
+// INFINITE ARTICLE SCROLL
+// New articles should appear at the base of every article,
+// the "base" being halfway down the related-articles div.
+
+// if ( document.location.hash == '#infinite' ) {
+
+var cachebuster = '?date=2014120913';
+var inf_config = {
+    property: 'mercurynews',
+    tid: 'disqus_thread',
+    reload_chartbeat: 1,// Future-proofing
+    reload_outbrain: 0, // Future-proofing
+    reload_comments: 0,// Future-proofing
+    section_lookups: {}
+};
+
+// Load the infinite-article script.
+// It's in a different location on dev.
+var script = document.createElement('script');
+script.type = 'text/javascript';
+if ( document.location.hash == '#dev' )
+{
+    script.src = '/infinite.js' + cachebuster;
+}
+else
+{
+    script.src = 'http://extras.denverpost.com/app/infinite/infinite.js' + cachebuster;
+}
+if ( document.location.hash !== '#noscroll' ) $('head')[0].appendChild(script);
+
+// &&& PROPERTY-SPECIFIC
+var check_href = document.location.href;
+var inf_section = 'all';
+if ( /business|troy-wolverton|michelle-quinn|60-second-business-break/i.exec(check_href) ) inf_section = 'business';
+else if ( /sports|athletics|sharks|raiders|warriors|earthquakes|tim-kawakami|mark-purdy/i.exec(check_href) ) inf_section = 'sports';
+else if ( /entertainment|music|movies-dvds-headlines|movies-dvds|books/i.exec(check_href) ) inf_section = 'entertainment';
+else if ( /bay-area-living|home-garden|eat-drink-play|family-relationships|health|travel-headlines|travel|hawaii|cruises|libations|san-francisco-bay-area-travel/i.exec(check_href) ) inf_section = 'lifestyles';
+else if ( /49ers/i.exec(check_href) ) inf_section = '49ers';
+else if ( /giants/i.exec(check_href) ) inf_section = 'giants';
+
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://extras.denverpost.com/cache/article/' + inf_config['property'] + '-' + inf_section + '.js';
+if ( document.location.hash !== '#noscroll' ) $('head')[0].appendChild(script);
+
+window.onload = function()
+{
+    inf_config['articles'] = ar.shuffle();
+
+    // Update inf with the values we've set in inf_config
+    if ( typeof inf_config !== 'undefined' )
+    {
+        for ( var key in inf_config )
+        {
+            if ( inf_config.hasOwnProperty(key) )
+            {
+                inf[key] = inf_config[key];
+            }
+        }
+    }
+
+    if ( document.location.hash !== '#noscroll' )
+    {
+        inf.init();
+        inf.checkpoints[0].bottom = inf.get_top();
+        $(window).scroll(inf, function()
+        {
+            run_on_scroll_interval();
+        });
+        var did_scroll = 0;
+        function run_on_scroll_interval() { did_scroll = 1; }
+        setInterval(function()
+        {
+            if ( did_scroll == 1 )
+            {
+                did_scroll = 0;
+                inf.check_scroll();
+            }
+        }, 500);
+    }
+}
+
+// } 
+// close if ( document.location.hash == '#infinite' )
+</script>
+<div class="forum_v2_pagecontent">
+&#8226; <a href="/opinion/ci_24039589/article-commenting-rules-road">Article commenting rules of the road</a>
+<br/><br/>
+</div>
+
+<!-- BEGIN COMMENTING -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dfm-mercurynews'; // required: replace example with your forum shortname
+
+(function() {
+    // Create some additional Disqus variables so that section anchors do not prevent discussions on the same article from being linked
+    var matchesForDisqus = (location.href.match(/(ci_[0-9]+)\/*(.*)/) || []);
+    if (matchesForDisqus[0] && matchesForDisqus[1]) {
+        window.disqus_identifier = matchesForDisqus[1];
+        window.disqus_url = 'http://' + window.location.host + '/' + matchesForDisqus[0];
+    }
+})(); 
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+   (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+   document.write('<div id="disqusHiddenTemp"><a style="font-size:12px; color:#39547a; float:right;" href="#disqus_thread" data-disqus-identifier="'+disqus_identifier+'"># Comments</a></div>');
+   $.getScript('http://' + disqus_shortname + '.disqus.com/count.js');
+   $('#disqusHiddenTemp a').appendTo($('#articleDate'));
+   $('#disqusHiddenTemp').remove();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<!-- END COMMENTING -->
+
+<script type="text/javascript">
+    //Get the article id
+    if ( typeof(articleId) != 'undefined' && articleId > 1 ) 
+        var article_id = articleId;
+    // Redirect to 404 page 
+    if ( document.getElementById('expiredArticleMsgId')) top.location.replace
+    ('http://www.mercurynews.com/404/ci_20040400?source=404_' + article_id);
+</script>
+
+<!-- THE DAN SLIDER -->
+<!-- ##### Begin Top Stories Bar rotator creation ##### -->
+
+<script type="text/javascript" src="http://extras.denverpost.com/media/js/slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:600" />
+
+<div id="dp-top-stories-bar-source" style="display:none;">
+    <script type="text/javascript" src="http://extras.denverpost.com/cache/merc_top_stories_bar.js"></script>
+</div>
+
+<script type="text/javascript">
+function getNodePosition(node) {
+    var eTop = $(node).offset().top;
+    return eTop - $(window).scrollTop();
+}
+
+$(document).ready(function() {
+    $('#hot-topics').after('<div id="dp-top-stories-location" style="display:block;height:0;"></div><div id="dp-top-stories-bar-wrap"></div>');
+    $('#dp-top-stories-bar-wrap').html($('#dp-top-stories-bar-source').html());
+    $('#dp-top-stories-bar-source').remove();
+    var ci = new RegExp(/[0-9]{7,9}/);
+    var ci_match = location.href.match(ci);
+    $('#dp-top-stories-bar > .dp-top-stories-item').each( function() {
+        if ($(this).children('a').attr('href').match(ci_match)) {
+            $(this).remove();
+        }
+    });
+    if ($(window).width() > 1024) {
+        var newWidth = ($(window).width() > 1280 ) ? 1260 : ( $(window).width() - 16 );
+        $('#dp-top-stories-bar').css('width',newWidth);
+    }
+    $('#dp-top-stories-bar').slick({
+        centerMode: false,
+        infinite: true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        speed: 300,
+        prevArrow: '<button type="button" class="slick-prev" style="display:none;"><span></span></button>',
+        nextArrow: '<button type="button" class="slick-next" style="display:none;"><span></span></button>',
+        responsive: [{
+            breakpoint: 800,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        }]
+    });
+    $('#dp-top-stories-bar button').delay(1000).fadeOut(600);
+    $('#dp-top-stories-bar').children().on('mouseenter',function(){
+        $('#dp-top-stories-bar button').fadeIn(200);
+    });
+    $('#dp-top-stories-bar').on('mouseleave',function(){
+        $('#dp-top-stories-bar button').fadeOut(450);
+    });
+    $(window).scroll(function() {
+	    if (getNodePosition('#dp-top-stories-location') < 1) {
+	        $('#dp-top-stories-bar-wrap').addClass('dp-top-stories-fixed');
+                $('#dp-top-stories-location').css('height','72px');
+	    } else {
+	        if ($('#dp-top-stories-bar-wrap').hasClass('dp-top-stories-fixed')) {
+	            $('#dp-top-stories-bar-wrap').removeClass('dp-top-stories-fixed');
+                    $('#dp-top-stories-location').css('height','0');
+	        }
+	    }
+	});
+    // cachebuster
+    if ( $('#dp-top-stories-bar-wrap').height() > 80 ) {
+        var cssURL = 'http://local.mercurynews.com/assets/local.css?cache=bust';
+        var cssElement=document.createElement('link')
+        cssElement.setAttribute('rel','stylesheet')
+        cssElement.setAttribute('type','text/css')
+        cssElement.setAttribute('href', cssURL);
+        document.getElementsByTagName("head")[0].appendChild(cssElement);
+    }
+});
+</script>
+
+<!-- ##### End Top Stories Bar rotator creation ##### --><!-- END FREEFORM RENDER, ID 24034140 --></td></tr></table></div></div><div class="clear"></div><div id="region5" class="region5"><!--IE6 fix--></div><div class="clear"></div><div id="region8and9box" class="region8and9box"><div id="region8" class="region8"><!--IE6 fix--></div><div id="region9" class="region9"><!--IE6 fix--></div></div><div class="clear"></div><div id="region10" class="region10"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- BEGIN COMPLEX LISTING PORTLET [ID = 4246279] --><script language="JavaScript" type="text/javascript">
+    function refreshArticleList(theForm) {
+        theForm.submit();
+    }
+
+  </script><!-- previousNewsKey = previousNews4246279 --><!-- previousNewsParam = null --><div class="complexListingBox"><div class="layout5FeatureItemBox"><a href="http://www.mercurynews.com/news"></a><div style="clear:both;"></div><!-- END ForEach --><div style="clear:both;"></div></div></div><!-- END COMPLEX LISTING PORTLET --></td></tr><tr><td valign="top"><!-- BEGIN COMPLEX LISTING PORTLET [ID = 4246280] --><script language="JavaScript" type="text/javascript">
+    function refreshArticleList(theForm) {
+        theForm.submit();
+    }
+
+  </script><!-- previousNewsKey = previousNews4246280 --><!-- previousNewsParam = null --><div class="complexListingBox"><div class="layout5FeatureItemBox"><a href="http://www.mercurynews.com/spotlight"></a><div style="clear:both;"></div><div class="listing5ImageBox"><a href="http://www.mercurynews.com/animal-life/ci_27127171/tips-handling-wildcats"><img src="http://extras.mnginteractive.com/live/media/site568/2014/1215/20141215_113821_trapped cats Don Bartletti Los Angeles Times_300.jpg" alt="" title="" border="0" valign="top" hspace="0" vspace="0" class="listing5Image"></a></div><div class="complexListingItemPhotoCredit">(Don Bartletti/Los Angeles Times)</div><div
+               
+                             	
+          	><a href="http://www.mercurynews.com/animal-life/ci_27127171/tips-handling-wildcats" class="listingItemTitle">Tips on handling wildcats<br></a><br><span class="listingArticleBlurb">Reader offers tips on getting cats that don't like to be touched to the vet.&nbsp;</span><a href="http://www.mercurynews.com/animal-life/ci_27127171/tips-handling-wildcats" class="listingArticleLinkTo"> </a></div></div><div class="otherItemBox"><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/eat-drink-play/ci_27117526/holiday-foray-san-franciscos-pier-39" class="complexListingLink">Holiday foray to San Francisco's Pier 39</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/corkheads/ci_27118099/wine-got-palate-fatigue-try-these-palate-cleansers" class="complexListingLink">Wine: Got palate fatigue? Try these palate cleansers</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/entertainment/ci_27130350/mondays-tv-picks-ascension-launches-new-starship-voyage" class="complexListingLink">Monday's TV picks: 'Ascension' launches new starship voyage</a><span class="originatingSource"></span></div><!-- END ForEach --><div style="clear:both;"></div></div></div><!-- END COMPLEX LISTING PORTLET --></td></tr><tr><td valign="top"><!-- BEGIN COMPLEX LISTING PORTLET [ID = 4246281] --><script language="JavaScript" type="text/javascript">
+    function refreshArticleList(theForm) {
+        theForm.submit();
+    }
+
+  </script><!-- previousNewsKey = previousNews4246281 --><!-- previousNewsParam = null --><div class="complexListingBox"><div class="layout5FeatureItemBox"><a href="http://www.mercurynews.com/celebrities"></a><div style="clear:both;"></div><div class="listing5ImageBox"><a href="http://www.mercurynews.com/entertainment/ci_27140526/is-angelina-jolie-faking-chicken-pox"><img src="http://extras.mnginteractive.com/live/media/site568/2014/1215/20141215__jolie-1215~1_300.JPG" alt="" title="" border="0" valign="top" hspace="0" vspace="0" class="listing5Image"></a></div><div class="complexListingItemPhotoCredit">(
+Michael Sohn
+)</div><div
+               
+                             	
+          	><a href="http://www.mercurynews.com/entertainment/ci_27140526/is-angelina-jolie-faking-chicken-pox" class="listingItemTitle">Is Angelina Jolie faking chicken pox?<br></a><br><span class="listingArticleBlurb">A Sony source claims Angelina Jolie is faking illness to avoid promoting her film &#8220;Unbroken,&#8221; as payback for Sony execs mocking her in emails that were leaked recently. Meanwhile, yet more emails have emerged in which Sony officials criticize a James Bond film and talk about forcing Bill Murray to star in next &#8220;Ghostbusters.&#8221;&nbsp;</span><a href="http://www.mercurynews.com/entertainment/ci_27140526/is-angelina-jolie-faking-chicken-pox" class="listingArticleLinkTo"> </a></div></div><div class="otherItemBox"><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/entertainment/ci_27141958/george-clooney-was-devastated-over-monuments-men" class="complexListingLink">George Clooney was devastated over 'Monuments Men'</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/entertainment/ci_27140220/bill-cosby-says-only-black-journalists-are-neutral" class="complexListingLink">Bill Cosby says only black journalists are neutral</a><span class="originatingSource"></span></div><div
+               
+                             	
+          	><li class="listNoImage"><a href="http://www.mercurynews.com/entertainment/ci_27137356/irene-dalis-superstar-mezzo-soprano-and-founder-opera" class="complexListingLink">Irene Dalis: Superstar mezzo-soprano and founder of Opera San Jose, dies at 89<img src='http://extras.mnginteractive.com/live/iconTypes/slideshow.gif' border="false"></a><span class="originatingSource"></span></div><!-- END ForEach --><div style="clear:both;"></div></div></div><!-- END COMPLEX LISTING PORTLET --></td></tr></table></div><!--
+				<div id="sponsorLinks" class="sponsorLinks"><script type="text/javascript">
+	    	//Required
+	    	ctxt_ad_interface = 'http://cm.npc-medianews.overture.com/js_1_0/';
+	    	ctxt_ad_config = '2554942840';
+	    	ctxt_ad_width = 728;								//Determined per layout
+	    	ctxt_ad_height = 90;								//Determined per layout
+	    	ctxt_ad_source = 'npc_mng_sanjosemercurynews_t2_ctxt';				//Determined per site/category tier/test?
+
+	    	//Query Context
+	    	ctxt_ad_id = 'misc';											//Context ID (t1/t2 category name)
+	    	ctxt_ad_url = window.location.href;										//Page URL
+
+	    	//Reporting
+	    	ctxt_ad_type = 'misc';										//Used in business reporting
+	    	</script><script type="text/javascript" src="http://cm.npc-medianews.overture.com/partner/js/ypn.js"></script></div>
+--><div class="clear"></div></div><div id="outerRightRegion" class="outerRightRegion"><div id="region4" class="region4"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-20 --><div id='dfp-20'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[300,250],[300,600],[160,600],[300,1050]], 'dfp-20').addService(googletag.pubads()).setTargeting('pos',['Cube1_RRail_ATF']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-20');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-20 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 26188307 --><div style="width: 315px; margin: 0 -8px 15px -7px;" class="ndn_embed" data-config-widget-id="10492" data-config-type="VideoLauncher/Slider300x250" data-config-tracking-group="90757"></div><!-- END FREEFORM RENDER, ID 26188307 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23182474 --><!--
+<div id="toutVideoDiv"></div>
+--><!-- END FREEFORM RENDER, ID 23182474 --></td></tr><tr><td valign="top"><!--No ad returned--></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23186579 --><!-- FF:Bartertown DFM Widget --><!-- END FREEFORM RENDER, ID 23186579 --></td></tr><tr><td valign="top"><!-- Begin DFP Premium ad uniqueId: dfp-22 --><div id='dfp-22'><script type='text/javascript'>
+											    googletag.defineSlot('/8013/mercurynews.com/News/Crime',[[300,250]], 'dfp-22').addService(googletag.pubads()).setTargeting('pos',['Cube3_RRail_lower']).setTargeting('kv','crimerebuild');										    
+											    googletag.pubads().enableSyncRendering();
+											    googletag.enableServices();										    
+											    googletag.display('dfp-22');
+										    </script></div><!-- End DFP Premium ad uniqueId: dfp-22 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23052674 --><!-- most popular div gets injected in this div (via footer js) EPB20140417 -->
+<div id="sidebarmostpop" style="width:300px;"></div>
+<div class="clear"></div>
+<!-- ownlocal widget -->
+<div id="ownLocalWidgy"></div>
+<div class="clear"></div> 
+<!-- END FREEFORM RENDER, ID 23052674 --></td></tr><tr><td valign="top"></td></tr></table></div><div class="clear"></div><div id="region6and7box" class="region6and7box"><div id="region6" class="region6"><!--IE6 fix--></div><div id="region7" class="region7"><!--IE6 fix--></div></div><div class="clear"></div><div id="region11" class="region11"><!--IE6 fix--></div></div></div><!-- closes div.outerOuterRegion --><div class="clear"></div><div id="footer" class="footerRegion"><!--IE6 fix--><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23156567 --><!-- BartertownGlobal - Bottom Line Header ( 23156567 ) -->
+<!-- 110414 Ed: added display:none to REMOVE Bottom Line (1 of 2) -->
+<div id="bottom-line" class="promo-package" style="display:none;">
+	<div class="header">
+		<h4 class="topic-header">The Bottom Line</h4>
+		<div id="bottom-line-nav" style="display:none;">
+			<ul>
+				<li><a href="">Celebrities</a></li>
+				<li><a href="">Culture</a></li>
+				<li><a href="">Oddities</a></li>
+				<li><a href="">Comedy</a></li>
+				<li><a href="">Good News</a></li>
+				<li><a href="">Comics</a></li>
+				<li><a href="">Games</a></li>
+				<li><a href="">Advice</a></li>
+				<li><a href="">Polls</a></li>
+			</ul> <!-- .nav -->
+		</div>
+	</div>
+</div>
+<!-- This is where the complex listings and the ad from region10 are jquery'ed into: -->
+<!-- 110414 Ed: added display:none to REMOVE Bottom Line (2 of 2) -->
+<div id="bottom-line-columns" class="promo-package" style="display:none;"></div><!-- END FREEFORM RENDER, ID 23156567 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23156569 --><div id="googleAdSense" style="width:728px; margin:auto;">
+		<script>
+			google_ad_client = 'ca-lmc-digitalfirstmedia'; // substitute the publisher's client_id
+			google_ad_channel = '';
+			google_language = 'en';
+			google_ad_format = '728x90_pas_abgn'; 
+			google_ad_width = '728';
+			google_ad_height = '90';
+			google_ad_type = 'text'; // type of ads to display
+			google_page_url = 'http://www.'+dfm.api("data","siteDomain");
+			google_color_bg = 'ffffff'; // the ads' background color is white
+			google_color_border = 'cccccc'; // the border surrounding all of the ads is gray AFC IFrame Protocol Reference Google_AdSense_HTML_Protocol.html10/4/13 4:42:36 PM
+			google_color_line = '000000'; // the line surrounding each ad is black
+			google_color_link = '0000ff'; // the ad link is blue
+			google_color_text = '000000'; // the ad text is black
+			google_encoding = 'utf8';
+			google_safe = 'high';
+			google_ad_section = 'default';
+      </script>
+      <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<!-- ###START-FFglobalfooter### -->
+<!-- BartertownGlobal - Footer JS ( 23156569 ) -->
+<ul class="share-widget" id="footerShare" style="width:160px; margin:10px auto;"></ul>
+<div id="dfmFooterPlaceholder"></div>
+<!-- Actual footer element is in the nav freeform and will be moved here once filled with html -->
+
+<!-- jBar -->
+<script src="http://extras.mnginteractive.com/live/js/jquery/jBar/jBar_btown.js" type="text/javascript"></script>
+
+<div id="blogrotator" style="display:none;">
+<hr class="top-border fat">
+<h4 class="hed_blogrotator" id="hed_blogrotator">Blogs</h4>
+
+
+<div id="blog-widget-container-large" style="width:480px!important;">
+    <div class="carousel slide three-image">
+	    <div id="blog-widget-large-carousel" class="carousel-inner">
+            <ul id="blog-widget-items">
+            </ul>
+        </div>
+	    <a id="blog-widget-large-backward" class="carousel-control left">&lsaquo;</a><a id="blog-widget-large-forward" class="carousel-control right">&rsaquo;</a>
+    </div>
+</div>
+</div>
+
+<script async type="text/javascript" src="http://extras.mnginteractive.com/live/js/sharedCode/vendorWidgets.js"></script>
+
+<script async src="http://local.medianewsgroup.com/common/dfm/footer.js"></script>
+
+<script>
+// GSA Search override
+/*
+if ( dfm.env.domain == 'insidebayarea' || dfm.env.domain == 'buffzone' || dfm.env.domain == 'siliconvalley' )
+{
+if ( dfm.$('#yahooSearchForm').length )
+{
+var new_form = dfm.$('#yahooSearchForm').attr('action').replace('gsa_', 'sca_');
+dfm.$('#yahooSearchForm').attr('action', new_form);
+}
+}
+else
+{
+*/
+if ( dfm.$('#yahooSearchForm').length )
+{
+var new_form = dfm.$('#yahooSearchForm').attr('action').replace('sca_', 'gsa_');
+dfm.$('#yahooSearchForm').attr('action', new_form);
+}
+//}
+
+</script>
+<!-- ###END-FFglobalfooter### --><!-- END FREEFORM RENDER, ID 23156569 --></td></tr><tr><td valign="top"><!-- BEGIN FREEFORM RENDER, ID 23182527 --><!-- NDN Perfect Pixel -->
+<!--
+<script type="text/javascript" src="http://dmeserv.newsinc.com/repub/sanjosemercurynews_90757/dynamicWidgets.js"></script>
+<script type="text/javascript">
+NDNDynVideoWidgets();
+</script>
+-->
+<!-- end NDN Perfect Pixel -->
+
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    // this removes the unwanted <br> tags at the end of the article - 20140723EPB
+    $("#articleBody p:last-of-type").nextAll("br").remove();
+  });  
+</script>
+
+
+<script type="text/javascript">
+// #############
+// Begin Most-Popular widget
+// #############
+
+// What widgets do we want? What order should they be in? What should they be named?
+// The order here is the order the tabs will appear.
+// The first of the pair of values is what the tab will be named,
+// and the second of the pair is what list will be published.
+// These are the available lists: day, hour, news, sports, business, entertainment, style, opinion
+
+var pop_config = {
+'quantity': 8,
+'location': 'bottom',
+'tabs' : {
+	'Day': 'day',
+	'Hour': 'hour',
+	'News': 'news',
+	'Sports': 'sports',
+	'Biz': 'business',	
+	'A&amp;E': 'entertainment',
+	//'Photos': 'photo'
+	'Email': 'emailed',
+	'Life': 'style'
+}
+};
+
+if ( is_it_home() == true || is_it_article() == true || dfmNav.params.pageTitle === 'San Mateo County Times' || dfmNav.params.pageTitle === 'Berryessa' || dfmNav.params.pageTitle === 'Milpitas Post' || dfmNav.params.pageTitle === 'Pacifica' || dfmNav.params.pageTitle === 'Fremont Bulletin' )
+{
+    if ( dfmNav.params.pageTitle === 'San Mateo County Times' || dfmNav.params.pageTitle === 'Berryessa' || dfmNav.params.pageTitle === 'Milpitas Post' || dfmNav.params.pageTitle === 'Pacifica' || dfmNav.params.pageTitle === 'Fremont Bulletin' ) pop_config.id = '#region8';
+
+    if ( is_it_home() == true || is_it_article() == true )
+    {
+        article_pop = setInterval(function(){
+            if ( dfm.$('#sidebarmostpop').length ) 
+            {
+                pop_config.id = '#sidebarmostpop';
+                pop_config.location = 'replace';
+                pop_config.quantity = 5;
+                // If the js has already been loaded we load the widget ourselves
+                if ( dfm.$('pop_js').length ) load_pop_widget(pop_config);
+                else dfm.$.getScript('http://extras.denverpost.com/cache/popular/mercurynews-widget.js');
+                window.clearInterval(article_pop);
+            }
+        },500);
+    }
+    var write_mercurynews_widget_photos_hour8 = write_mercurynews_widget_hour8 = write_mercurynews_widget_hourly8 = false;
+    dfm.$.getScript('http://extras.denverpost.com/cache/popular/mercurynews-widget.js');
+}
+
+
+// #############
+// End Most-Popular widget rewrite
+// #############
+</script>
+
+<!-- END FREEFORM RENDER, ID 23182527 --></td></tr></table></div><div class="clear"></div><div id="mngiFooter" class="mngiFooter"><div class="layoutFooterLinks"><a class="privacyPolicyLink" href="/portlet/layout/html/privacypolicy/privacypolicy.jsp?siteId=568" target="privacypolicy">Privacy Policy</a><a class="footerLinkSeparator">&nbsp;&nbsp;|&nbsp;&nbsp;</a><a class="privacyPolicyLink" href="/portlet/layout/html/privacypolicy/privacypolicy.jsp?siteId=568#terms" target="privacypolicy">Terms of Use</a><a class="footerLinkSeparator">&nbsp;&nbsp;|&nbsp;&nbsp;</a><a class="mngSitemapLink" href="http://www.medianewsgroup.com/consumers/Pages/OurBrands.aspx" target="sitemap">MNG Corporate Site Map</a><a class="footerLinkSeparator">&nbsp;&nbsp;|&nbsp;&nbsp;</a><a class="copyrightLink" href="/portlet/layout/html/copyright/copyright.jsp?siteId=568" target="copyright">Copyright</a><br /><a class="mngFooterImgLink" href="http://www.medianewsgroup.com" target="MediaNews Group"><img src="http://extras.mnginteractive.com/live/media/mng_logos/MNG_footerGraphic.jpg"></a><script type="text/javascript">
+if (typeof(MNGiCustomWeather) == "undefined"){
+	var MNGiCustomWeather = false;
+}
+
+if (MNGiCustomWeather){
+    
+	document.write("<br><a href='http://www.customweather.com' target='_new' class='customWeatherCopyrightLink'>Weather data Copyright 2007 CustomWeather, Inc.</a>");
+}
+
+</script></div></div><div id="featuredLinks" class="textLinksRegion"></div></div></span></div></span><script type="text/javascript">(function () { var tagjs = document.createElement("script"); var s = document.getElementsByTagName("script")[0]; tagjs.async = true; tagjs.src = "//s.btstatic.com/tag.js#site=sfWGaRL"; s.parentNode.insertBefore(tagjs, s); } ());</script><noscript><iframe src="//s.thebrighttag.com/iframe?c=sfWGaRL" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript></body></html>
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "", 
+    "language": "english", 
+    "docSentiment": {
+        "mixed": "1", 
+        "score": "-0.418435", 
+        "type": "negative"
+    }
+}
+
+## Document Sentiment ##
+type:  negative
+score:  -0.418435
+
+
+
+############################################
+#   Targeted Sentiment Analysis Example    #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+Error in targeted sentiment analysis call:  cannot-locate-keyphrase
+
+
+
+############################################
+#   Text Extraction Example                #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+<Response [411]>
+Expecting value: line 1 column 1 (char 0)
+Error in text extraction call:  parse-error
+
+
+
+############################################
+#   Author Extraction Example              #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide", 
+    "author": "Sam HananelAssociated"
+}
+
+## Author ##
+author:  Sam HananelAssociated
+
+
+
+
+############################################
+#   Language Detection Example             #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "language": "english", 
+    "url": "", 
+    "iso-639-1": "en", 
+    "iso-639-2": "eng", 
+    "iso-639-3": "eng", 
+    "wikipedia": "http://en.wikipedia.org/wiki/English_language", 
+    "native-speakers": "309-400 million", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "ethnologue": "http://www.ethnologue.com/show_language.asp?code=eng"
+}
+
+## Language ##
+language:  english
+iso-639-1:  en
+native speakers:  309-400 million
+
+
+
+
+############################################
+#   Title Extraction Example               #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide", 
+    "title": "Threatening Facebook posts as free speech? Supreme Court to decide - San Jose Mercury News"
+}
+
+## Title ##
+title:  Threatening Facebook posts as free speech? Supreme Court to decide - San Jose Mercury News
+
+
+
+
+############################################
+#   Relation Extraction Example            #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "relations": [
+        {
+            "action": {
+                "text": "struggled", 
+                "verb": {
+                    "text": "struggle", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "struggle"
+            }, 
+            "object": {
+                "text": "over where to draw the line between free speech and illegal threats in the digital age"
+            }, 
+            "subject": {
+                "text": "the Supreme Court"
+            }
+        }, 
+        {
+            "action": {
+                "text": "to draw", 
+                "verb": {
+                    "text": "draw", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "to draw"
+            }, 
+            "object": {
+                "text": "the line between free speech and illegal threats in the digital age"
+            }, 
+            "subject": {
+                "text": "the Supreme Court"
+            }
+        }, 
+        {
+            "action": {
+                "text": "convicted", 
+                "verb": {
+                    "text": "convict", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "convict"
+            }, 
+            "object": {
+                "text": "of posting violent threats on Facebook"
+            }, 
+            "subject": {
+                "text": "a Pennsylvania man"
+            }
+        }, 
+        {
+            "action": {
+                "text": "posting", 
+                "verb": {
+                    "text": "post", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "post"
+            }, 
+            "location": {
+                "text": "on Facebook"
+            }, 
+            "subject": {
+                "text": "violent threats"
+            }
+        }, 
+        {
+            "action": {
+                "text": "killing", 
+                "verb": {
+                    "text": "kill", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "kill"
+            }, 
+            "object": {
+                "text": "his estranged wife"
+            }, 
+            "subject": {
+                "text": "The justices"
+            }
+        }, 
+        {
+            "action": {
+                "text": "shooting", 
+                "verb": {
+                    "text": "shoot", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "shoot"
+            }, 
+            "object": {
+                "text": "up"
+            }, 
+            "subject": {
+                "text": "a school"
+            }
+        }, 
+        {
+            "action": {
+                "text": "say", 
+                "verb": {
+                    "text": "say", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "say"
+            }, 
+            "object": {
+                "text": "he didn't mean to threaten anyone"
+            }, 
+            "subject": {
+                "text": "Lawyers for Anthony Elonis"
+            }
+        }, 
+        {
+            "action": {
+                "text": "mean", 
+                "verb": {
+                    "text": "mean", 
+                    "tense": "past", 
+                    "negated": "1"
+                }, 
+                "lemmatized": "mean"
+            }, 
+            "object": {
+                "text": "to threaten anyone"
+            }, 
+            "subject": {
+                "text": "he"
+            }
+        }, 
+        {
+            "action": {
+                "text": "contend", 
+                "verb": {
+                    "text": "contend", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "contend"
+            }, 
+            "object": {
+                "text": "his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife"
+            }, 
+            "subject": {
+                "text": "They"
+            }
+        }, 
+        {
+            "action": {
+                "text": "argues", 
+                "verb": {
+                    "text": "argue", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "argue"
+            }, 
+            "object": {
+                "text": "the proper test is not what Elonis intended"
+            }, 
+            "subject": {
+                "text": "The government"
+            }
+        }, 
+        {
+            "action": {
+                "text": "would make", 
+                "verb": {
+                    "text": "make", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "would make"
+            }, 
+            "object": {
+                "text": "a reasonable person"
+            }, 
+            "subject": {
+                "text": "his words"
+            }
+        }, 
+        {
+            "action": {
+                "text": "feel", 
+                "verb": {
+                    "text": "feel", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "feel"
+            }, 
+            "object": {
+                "text": "threatened"
+            }, 
+            "subject": {
+                "text": "a reasonable person"
+            }
+        }, 
+        {
+            "action": {
+                "text": "has", 
+                "verb": {
+                    "text": "has", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "has"
+            }, 
+            "object": {
+                "text": "the standard"
+            }, 
+            "location": {
+                "text": "a jury used in convicting him under a federal law"
+            }, 
+            "subject": {
+                "text": "That"
+            }
+        }, 
+        {
+            "action": {
+                "text": "used", 
+                "verb": {
+                    "text": "use", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "use"
+            }, 
+            "location": {
+                "text": "in convicting him under a federal law"
+            }, 
+            "subject": {
+                "text": "a jury"
+            }
+        }, 
+        {
+            "action": {
+                "text": "convicting", 
+                "verb": {
+                    "text": "convict", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "convict"
+            }, 
+            "object": {
+                "text": "under a federal law"
+            }, 
+            "subject": {
+                "text": "him"
+            }
+        }, 
+        {
+            "action": {
+                "text": "barring", 
+                "verb": {
+                    "text": "bar", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "bar"
+            }, 
+            "object": {
+                "text": "threats of violence"
+            }, 
+            "subject": {
+                "text": "a federal law"
+            }
+        }, 
+        {
+            "action": {
+                "text": "seemed concerned", 
+                "verb": {
+                    "text": "concern", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "seem concern"
+            }, 
+            "object": {
+                "text": "Some justices"
+            }, 
+            "subject": {
+                "text": "that the government's position is too broad and risks sweeping in language protected by the First Amendment"
+            }
+        }, 
+        {
+            "action": {
+                "text": "is", 
+                "verb": {
+                    "text": "be", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "be"
+            }, 
+            "object": {
+                "text": "too broad and risks sweeping in language"
+            }, 
+            "subject": {
+                "text": "the government's position"
+            }
+        }, 
+        {
+            "action": {
+                "text": "protected", 
+                "verb": {
+                    "text": "protect", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "protect"
+            }, 
+            "object": {
+                "text": "by the First Amendment"
+            }, 
+            "subject": {
+                "text": "language"
+            }
+        }, 
+        {
+            "action": {
+                "text": "seemed to be", 
+                "verb": {
+                    "text": "be", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "seem to be"
+            }, 
+            "object": {
+                "text": "over what standard to use"
+            }, 
+            "subject": {
+                "text": "little agreement"
+            }
+        }, 
+        {
+            "action": {
+                "text": "does", 
+                "verb": {
+                    "text": "do", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "do"
+            }, 
+            "object": {
+                "text": "prove what's in somebody else's mind"
+            }, 
+            "subject": {
+                "text": "one"
+            }
+        }, 
+        {
+            "action": {
+                "text": "prove", 
+                "verb": {
+                    "text": "prove", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "prove"
+            }, 
+            "object": {
+                "text": "what's in somebody else's mind"
+            }, 
+            "subject": {
+                "text": "one"
+            }
+        }, 
+        {
+            "action": {
+                "text": "was", 
+                "verb": {
+                    "text": "be", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "be"
+            }, 
+            "object": {
+                "text": "on the bench"
+            }, 
+            "subject": {
+                "text": "Justice Ruth Bader Ginsburg"
+            }
+        }, 
+        {
+            "action": {
+                "text": "had", 
+                "verb": {
+                    "text": "have", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "have"
+            }, 
+            "object": {
+                "text": "a stent implanted to clear a blocked artery"
+            }, 
+            "subject": {
+                "text": "she"
+            }
+        }, 
+        {
+            "action": {
+                "text": "cited", 
+                "verb": {
+                    "text": "cite", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "cite"
+            }, 
+            "object": {
+                "text": "a teenager prosecuted"
+            }, 
+            "subject": {
+                "text": "he"
+            }
+        }, 
+        {
+            "action": {
+                "text": "prosecuted", 
+                "verb": {
+                    "text": "prosecute", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "prosecute"
+            }, 
+            "subject": {
+                "text": "a teenager"
+            }
+        }, 
+        {
+            "action": {
+                "text": "making", 
+                "verb": {
+                    "text": "make", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "make"
+            }, 
+            "object": {
+                "text": "sarcastic comments"
+            }, 
+            "location": {
+                "text": "in a video-game chat room about shooting up a kindergarten after another teen called him crazy"
+            }, 
+            "subject": {
+                "text": "a teenager"
+            }
+        }, 
+        {
+            "action": {
+                "text": "shooting", 
+                "verb": {
+                    "text": "shoot", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "shoot"
+            }, 
+            "object": {
+                "text": "up"
+            }, 
+            "subject": {
+                "text": "a kindergarten"
+            }
+        }, 
+        {
+            "action": {
+                "text": "called", 
+                "verb": {
+                    "text": "call", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "call"
+            }, 
+            "object": {
+                "text": "him"
+            }, 
+            "subject": {
+                "text": "another teen"
+            }
+        }, 
+        {
+            "action": {
+                "text": "suggested", 
+                "verb": {
+                    "text": "suggest", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "suggest"
+            }, 
+            "object": {
+                "text": "the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat"
+            }, 
+            "subject": {
+                "text": "Chief Justice John Roberts"
+            }
+        }, 
+        {
+            "action": {
+                "text": "said", 
+                "verb": {
+                    "text": "say", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "say"
+            }, 
+            "object": {
+                "text": "everyone has a different view of context and the better standard is looking at what the speaker intended"
+            }, 
+            "subject": {
+                "text": "Elwood"
+            }
+        }, 
+        {
+            "action": {
+                "text": "wondered", 
+                "verb": {
+                    "text": "wonder", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "wonder"
+            }, 
+            "object": {
+                "text": "about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat"
+            }, 
+            "subject": {
+                "text": "Roberts"
+            }
+        }, 
+        {
+            "action": {
+                "text": "has used", 
+                "verb": {
+                    "text": "use", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "have use"
+            }, 
+            "object": {
+                "text": "graphic language"
+            }, 
+            "subject": {
+                "text": "Eminem"
+            }
+        }, 
+        {
+            "action": {
+                "text": "killing", 
+                "verb": {
+                    "text": "kill", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "kill"
+            }, 
+            "object": {
+                "text": "his ex-wife"
+            }, 
+            "subject": {
+                "text": "that"
+            }
+        }, 
+        {
+            "action": {
+                "text": "know", 
+                "verb": {
+                    "text": "know", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "know"
+            }, 
+            "object": {
+                "text": "make a nice bed"
+            }, 
+            "subject": {
+                "text": "'You"
+            }
+        }, 
+        {
+            "action": {
+                "text": "make", 
+                "verb": {
+                    "text": "make", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "make"
+            }, 
+            "object": {
+                "text": "a nice bed"
+            }, 
+            "subject": {
+                "text": "'Da-da"
+            }
+        }, 
+        {
+            "action": {
+                "text": "said", 
+                "verb": {
+                    "text": "say", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "say"
+            }, 
+            "object": {
+                "text": "'You know, 'Da-da make a nice bed for mommy at the bottom of the lake"
+            }, 
+            "subject": {
+                "text": "Roberts"
+            }
+        }, 
+        {
+            "action": {
+                "text": "representing", 
+                "verb": {
+                    "text": "represent", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "represent"
+            }, 
+            "object": {
+                "text": "the government"
+            }, 
+            "subject": {
+                "text": "Justice Department attorney Michael Dreeben"
+            }
+        }, 
+        {
+            "action": {
+                "text": "said", 
+                "verb": {
+                    "text": "say", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "say"
+            }, 
+            "object": {
+                "text": "a jury can look at the context in which comments are made"
+            }, 
+            "subject": {
+                "text": "Justice Department attorney Michael Dreeben, representing the government,"
+            }
+        }, 
+        {
+            "action": {
+                "text": "are made", 
+                "verb": {
+                    "text": "make", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "be make"
+            }, 
+            "location": {
+                "text": "the context"
+            }, 
+            "subject": {
+                "text": "comments"
+            }
+        }, 
+        {
+            "action": {
+                "text": "are", 
+                "verb": {
+                    "text": "be", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "be"
+            }, 
+            "object": {
+                "text": "sung"
+            }, 
+            "location": {
+                "text": "at a concert where people go to be entertained"
+            }, 
+            "subject": {
+                "text": "Eminem's lyrics"
+            }
+        }, 
+        {
+            "action": {
+                "text": "are sung", 
+                "verb": {
+                    "text": "sing", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "be sing"
+            }, 
+            "location": {
+                "text": "at a concert where people go to be entertained"
+            }, 
+            "subject": {
+                "text": "Eminem's lyrics"
+            }
+        }, 
+        {
+            "action": {
+                "text": "be", 
+                "verb": {
+                    "text": "be", 
+                    "tense": "future"
+                }, 
+                "lemmatized": "be"
+            }, 
+            "object": {
+                "text": "entertained"
+            }, 
+            "subject": {
+                "text": "people"
+            }
+        }, 
+        {
+            "action": {
+                "text": "said", 
+                "verb": {
+                    "text": "say", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "say"
+            }, 
+            "object": {
+                "text": "people go to be entertained"
+            }, 
+            "subject": {
+                "text": "he"
+            }
+        }, 
+        {
+            "action": {
+                "text": "do", 
+                "verb": {
+                    "text": "do", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "do"
+            }, 
+            "object": {
+                "text": "start out"
+            }, 
+            "subject": {
+                "text": "you"
+            }
+        }, 
+        {
+            "action": {
+                "text": "want", 
+                "verb": {
+                    "text": "want", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "want"
+            }, 
+            "object": {
+                "text": "to be a rap artist"
+            }, 
+            "subject": {
+                "text": "you"
+            }
+        }, 
+        {
+            "action": {
+                "text": "testified", 
+                "verb": {
+                    "text": "testify", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "testify"
+            }, 
+            "object": {
+                "text": "that the comments made her fear for her life and obtain a protective order"
+            }, 
+            "subject": {
+                "text": "Elonis' wife"
+            }
+        }, 
+        {
+            "action": {
+                "text": "obtain", 
+                "verb": {
+                    "text": "obtain", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "obtain"
+            }, 
+            "object": {
+                "text": "a protective order"
+            }, 
+            "subject": {
+                "text": "the comments"
+            }
+        }, 
+        {
+            "action": {
+                "text": "wrote", 
+                "verb": {
+                    "text": "write", 
+                    "tense": "past"
+                }, 
+                "lemmatized": "write"
+            }, 
+            "object": {
+                "text": "wondering whether the protective order was thick enough to stop a bullet"
+            }, 
+            "subject": {
+                "text": "Elonis"
+            }
+        }, 
+        {
+            "action": {
+                "text": "wondering", 
+                "verb": {
+                    "text": "wonder", 
+                    "tense": "present"
+                }, 
+                "lemmatized": "wonder"
+            }, 
+            "object": {
+                "text": "whether the protective order was thick enough to stop a bullet"
+            }, 
+            "subject": {
+                "text": "a lengthy post"
+            }
+        }
+    ], 
+    "url": "", 
+    "language": "english"
+}
+
+## Relations ##
+Subject:  the Supreme Court
+Action:  struggled
+Object:  over where to draw the line between free speech and illegal threats in the digital age
+
+Subject:  the Supreme Court
+Action:  to draw
+Object:  the line between free speech and illegal threats in the digital age
+
+Subject:  a Pennsylvania man
+Action:  convicted
+Object:  of posting violent threats on Facebook
+
+Subject:  violent threats
+Action:  posting
+
+Subject:  The justices
+Action:  killing
+Object:  his estranged wife
+
+Subject:  a school
+Action:  shooting
+Object:  up
+
+Subject:  Lawyers for Anthony Elonis
+Action:  say
+Object:  he didn't mean to threaten anyone
+
+Subject:  he
+Action:  mean
+Object:  to threaten anyone
+
+Subject:  They
+Action:  contend
+Object:  his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife
+
+Subject:  The government
+Action:  argues
+Object:  the proper test is not what Elonis intended
+
+Subject:  his words
+Action:  would make
+Object:  a reasonable person
+
+Subject:  a reasonable person
+Action:  feel
+Object:  threatened
+
+Subject:  That
+Action:  has
+Object:  the standard
+
+Subject:  a jury
+Action:  used
+
+Subject:  him
+Action:  convicting
+Object:  under a federal law
+
+Subject:  a federal law
+Action:  barring
+Object:  threats of violence
+
+Subject:  that the government's position is too broad and risks sweeping in language protected by the First Amendment
+Action:  seemed concerned
+Object:  Some justices
+
+Subject:  the government's position
+Action:  is
+Object:  too broad and risks sweeping in language
+
+Subject:  language
+Action:  protected
+Object:  by the First Amendment
+
+Subject:  little agreement
+Action:  seemed to be
+Object:  over what standard to use
+
+Subject:  one
+Action:  does
+Object:  prove what's in somebody else's mind
+
+Subject:  one
+Action:  prove
+Object:  what's in somebody else's mind
+
+Subject:  Justice Ruth Bader Ginsburg
+Action:  was
+Object:  on the bench
+
+Subject:  she
+Action:  had
+Object:  a stent implanted to clear a blocked artery
+
+Subject:  he
+Action:  cited
+Object:  a teenager prosecuted
+
+Subject:  a teenager
+Action:  prosecuted
+
+Subject:  a teenager
+Action:  making
+Object:  sarcastic comments
+
+Subject:  a kindergarten
+Action:  shooting
+Object:  up
+
+Subject:  another teen
+Action:  called
+Object:  him
+
+Subject:  Chief Justice John Roberts
+Action:  suggested
+Object:  the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat
+
+Subject:  Elwood
+Action:  said
+Object:  everyone has a different view of context and the better standard is looking at what the speaker intended
+
+Subject:  Roberts
+Action:  wondered
+Object:  about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat
+
+Subject:  Eminem
+Action:  has used
+Object:  graphic language
+
+Subject:  that
+Action:  killing
+Object:  his ex-wife
+
+Subject:  'You
+Action:  know
+Object:  make a nice bed
+
+Subject:  'Da-da
+Action:  make
+Object:  a nice bed
+
+Subject:  Roberts
+Action:  said
+Object:  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake
+
+Subject:  Justice Department attorney Michael Dreeben
+Action:  representing
+Object:  the government
+
+Subject:  Justice Department attorney Michael Dreeben, representing the government,
+Action:  said
+Object:  a jury can look at the context in which comments are made
+
+Subject:  comments
+Action:  are made
+
+Subject:  Eminem's lyrics
+Action:  are
+Object:  sung
+
+Subject:  Eminem's lyrics
+Action:  are sung
+
+Subject:  people
+Action:  be
+Object:  entertained
+
+Subject:  he
+Action:  said
+Object:  people go to be entertained
+
+Subject:  you
+Action:  do
+Object:  start out
+
+Subject:  you
+Action:  want
+Object:  to be a rap artist
+
+Subject:  Elonis' wife
+Action:  testified
+Object:  that the comments made her fear for her life and obtain a protective order
+
+Subject:  the comments
+Action:  obtain
+Object:  a protective order
+
+Subject:  Elonis
+Action:  wrote
+Object:  wondering whether the protective order was thick enough to stop a bullet
+
+Subject:  a lengthy post
+Action:  wondering
+Object:  whether the protective order was thick enough to stop a bullet
+
+
+
+
+############################################
+#   Text Categorization Example            #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "category": "arts_entertainment", 
+    "language": "english", 
+    "url": "", 
+    "score": "0.807488", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html"
+}
+
+## Category ##
+text:  arts_entertainment
+score:  0.807488
+
+
+
+
+############################################
+#   Feed Detection Example                 #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "feeds": [], 
+    "url": "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide"
+}
+
+## Feeds ##
+
+
+
+
+
+############################################
+#   Microformats Parsing Example           #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide", 
+    "microformats": []
+}
+
+## Microformats ##
+
+
+
+
+
+############################################
+#   Image Extraction Example               #
+############################################
+
+
+Processing url:  http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "image": "http://extras.mnginteractive.com/live/media/mng_logos/MNG_footerGraphic.jpg", 
+    "totalTransactions": "2", 
+    "url": "http://www.mercurynews.com/crime-courts/ci_27043759/facebook-threats-free-speech-supreme-court-decide"
+}
+
+## Image ##
+Image:  http://extras.mnginteractive.com/live/media/mng_logos/MNG_footerGraphic.jpg
+
+
+
+
+
+
+############################################
+#   Image tagging Example                  #
+############################################
+
+
+Processing url:  
+
+Error in image tagging call:  content-is-empty
+
+
+
+
+
+############################################
+#   Taxonomy  Example                      #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html", 
+    "url": "", 
+    "language": "english", 
+    "taxonomy": [
+        {
+            "score": "0.490113", 
+            "label": "/law, govt and politics/government"
+        }, 
+        {
+            "confident": "no", 
+            "score": "0.388199", 
+            "label": "/art and entertainment/music/music genres/hip hop"
+        }, 
+        {
+            "confident": "no", 
+            "score": "0.376819", 
+            "label": "/health and fitness/disorders/mental disorder/panic and anxiety"
+        }
+    ]
+}
+
+## Categories ##
+/law, govt and politics/government  :  0.490113
+/art and entertainment/music/music genres/hip hop  :  0.388199
+/health and fitness/disorders/mental disorder/panic and anxiety  :  0.376819
+
+
+
+
+
+
+############################################
+#   Combined  Example                      #
+############################################
+
+
+Processing text:  (u"WASHINGTON -- From the violent lyrics of rap music to the crude comments of teenagers in video-game chat rooms, the Supreme Court struggled Monday over where to draw the line between free speech and illegal threats in the digital age.  The justices considered the case of a Pennsylvania man convicted of posting violent threats on Facebook -- in the form of rap lyrics -- about killing his estranged wife, shooting up a school and slitting the throat of an FBI agent.  Lawyers for Anthony Elonis say he didn't mean to threaten anyone. They contend his posts under the pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  The government argues the proper test is not what Elonis intended, but whether his words would make a reasonable person feel threatened. That's the standard a jury used in convicting him under a federal law barring threats of violence.  Some justices seemed concerned that the government's position is too broad and risks sweeping in language protected by the First Amendment. But there seemed to be little agreement over what standard to use.  'How does one prove what's in somebody else's mind?' asked Justice Ruth Bader Ginsburg, who was on the bench five days after she had a stent implanted to clear a blocked artery.  As a recent example, he cited a teenager prosecuted for making sarcastic comments in a video-game chat room about shooting up a kindergarten after another teen called him crazy.  Chief Justice John Roberts suggested the government's standard simply would be whether a reasonable person familiar with teenagers in video-game chat rooms would view it as a threat. But Elwood said everyone has a different view of context and the better standard is looking at what the speaker intended.  Roberts wondered about rap stars like Eminem, who has used graphic language about killing his ex-wife that may be misinterpreted as a threat.  'You know, 'Da-da make a nice bed for mommy at the bottom of the lake,'' Roberts said, quoting an Eminem song.  Justice Department attorney Michael Dreeben, representing the government, said a jury can look at the context in which comments are made. Eminem's lyrics are sung at a concert where people go to be entertained, he said.  'How do you start out if you want to be a rap artist?' Roberts asked.  Elonis' wife testified that the comments made her fear for her life and obtain a protective order. After the court proceedings, Elonis wrote a lengthy post wondering whether the protective order was thick enough to stop a bullet.  'He ramps up and escalates the threat of the statements,' Dreeben said.  The case has drawn widespread attention from free-speech advocates who say comments on Facebook, Twitter and other social media can be hasty, impulsive and easily misinterpreted.  'This sounds like a roadmap for threatening a spouse and getting away with it,' Alito said.  Domestic violence advocacy groups argue that requiring proof that a speaker intended to be threatening would undermine the law's protective purpose. ",)
+
+## Response Object ##
+{
+    "status": "OK", 
+    "category": {
+        "category": "arts_entertainment", 
+        "score": "0.807488"
+    }, 
+    "totalTransactions": "4", 
+    "language": "english", 
+    "entities": [
+        {
+            "relevance": "0.787497", 
+            "count": "4", 
+            "type": "Person", 
+            "disambiguated": {
+                "freebase": "http://rdf.freebase.com/ns/m.066vhq", 
+                "dbpedia": "http://dbpedia.org/resource/John_Roberts", 
+                "name": "John Roberts"
+            }, 
+            "text": "Chief Justice John Roberts"
+        }, 
+        {
+            "relevance": "0.68244", 
+            "count": "5", 
+            "type": "Person", 
+            "text": "Anthony Elonis"
+        }, 
+        {
+            "relevance": "0.550999", 
+            "count": "3", 
+            "type": "FieldTerminology", 
+            "text": "chat room"
+        }, 
+        {
+            "relevance": "0.50815", 
+            "count": "2", 
+            "type": "Person", 
+            "disambiguated": {
+                "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+                "yago": "http://yago-knowledge.org/resource/Ruth_Bader_Ginsburg", 
+                "name": "Ruth Bader Ginsburg", 
+                "freebase": "http://rdf.freebase.com/ns/m.0199pk", 
+                "subType": [
+                    "Politician", 
+                    "HallOfFameInductee", 
+                    "Judge"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Ruth_Bader_Ginsburg"
+            }, 
+            "text": "Justice Ruth Bader Ginsburg"
+        }, 
+        {
+            "relevance": "0.498861", 
+            "count": "2", 
+            "type": "Person", 
+            "disambiguated": {
+                "website": "http://www.eminem.com/", 
+                "yago": "http://yago-knowledge.org/resource/Eminem", 
+                "name": "Eminem", 
+                "freebase": "http://rdf.freebase.com/ns/m.01vsgrn", 
+                "subType": [
+                    "MusicalArtist"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Eminem", 
+                "musicBrainz": "http://zitgist.com/music/artist/b95ce3ff-3d05-4e87-9e01-c97b66af13d4"
+            }, 
+            "text": "Eminem"
+        }, 
+        {
+            "relevance": "0.495382", 
+            "count": "2", 
+            "type": "Company", 
+            "disambiguated": {
+                "website": "http://www.facebook.com/", 
+                "yago": "http://yago-knowledge.org/resource/Facebook", 
+                "name": "Facebook", 
+                "freebase": "http://rdf.freebase.com/ns/m.02y1vz", 
+                "subType": [
+                    "Website", 
+                    "VentureFundedCompany"
+                ], 
+                "crunchbase": "http://www.crunchbase.com/company/facebook", 
+                "dbpedia": "http://dbpedia.org/resource/Facebook"
+            }, 
+            "text": "Facebook"
+        }, 
+        {
+            "relevance": "0.465509", 
+            "count": "3", 
+            "type": "Person", 
+            "text": "Michael Dreeben"
+        }, 
+        {
+            "relevance": "0.405244", 
+            "count": "1", 
+            "type": "Organization", 
+            "disambiguated": {
+                "website": "http://www.supremecourtus.gov/", 
+                "yago": "http://yago-knowledge.org/resource/Supreme_Court_of_the_United_States", 
+                "name": "Supreme Court of the United States", 
+                "freebase": "http://rdf.freebase.com/ns/m.07sz1", 
+                "opencyc": "http://sw.opencyc.org/concept/Mx4rvegiTpwpEbGdrcN5Y29ycA", 
+                "subType": [
+                    "GovernmentalBody"
+                ], 
+                "dbpedia": "http://dbpedia.org/resource/Supreme_Court_of_the_United_States", 
+                "geo": "38.890708333333336 -77.00434444444444"
+            }, 
+            "text": "Supreme Court"
+        }, 
+        {
+            "relevance": "0.36095", 
+            "count": "1", 
+            "type": "City", 
+            "text": "WASHINGTON"
+        }, 
+        {
+            "relevance": "0.359388", 
+            "count": "1", 
+            "type": "StateOrCounty", 
+            "text": "Pennsylvania"
+        }, 
+        {
+            "relevance": "0.356426", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "text": "First Amendment"
+        }, 
+        {
+            "relevance": "0.352762", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "text": "Domestic violence"
+        }, 
+        {
+            "relevance": "0.345581", 
+            "count": "1", 
+            "type": "Organization", 
+            "text": "FBI"
+        }, 
+        {
+            "relevance": "0.339691", 
+            "count": "1", 
+            "type": "Person", 
+            "text": "Alito"
+        }, 
+        {
+            "relevance": "0.336931", 
+            "count": "1", 
+            "type": "Organization", 
+            "text": "Justice Department"
+        }, 
+        {
+            "relevance": "0.334729", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "text": "federal law"
+        }, 
+        {
+            "relevance": "0.332624", 
+            "count": "1", 
+            "type": "Degree", 
+            "text": "stent"
+        }, 
+        {
+            "relevance": "0.326892", 
+            "count": "1", 
+            "type": "Person", 
+            "text": "Elwood"
+        }, 
+        {
+            "relevance": "0.305117", 
+            "count": "1", 
+            "type": "Company", 
+            "disambiguated": {
+                "website": "http://twitter.com/", 
+                "name": "Twitter", 
+                "freebase": "http://rdf.freebase.com/ns/m.0289n8t", 
+                "subType": [
+                    "Website", 
+                    "VentureFundedCompany"
+                ], 
+                "crunchbase": "http://www.crunchbase.com/company/twitter", 
+                "dbpedia": "http://dbpedia.org/resource/Twitter"
+            }, 
+            "text": "Twitter"
+        }, 
+        {
+            "relevance": "0.295131", 
+            "count": "1", 
+            "type": "FieldTerminology", 
+            "text": "social media"
+        }, 
+        {
+            "relevance": "0.290693", 
+            "count": "1", 
+            "type": "JobTitle", 
+            "text": "attorney"
+        }, 
+        {
+            "relevance": "0.290693", 
+            "count": "1", 
+            "type": "Quantity", 
+            "text": "five days"
+        }
+    ], 
+    "keywords": [
+        {
+            "relevance": "0.911508", 
+            "text": "video-game chat rooms"
+        }, 
+        {
+            "relevance": "0.675931", 
+            "text": "video-game chat room"
+        }, 
+        {
+            "relevance": "0.648727", 
+            "text": "reasonable person"
+        }, 
+        {
+            "relevance": "0.634067", 
+            "text": "Justice John Roberts"
+        }, 
+        {
+            "relevance": "0.632591", 
+            "text": "Ruth Bader Ginsburg"
+        }, 
+        {
+            "relevance": "0.600222", 
+            "text": "Department attorney Michael"
+        }, 
+        {
+            "relevance": "0.590803", 
+            "text": "Domestic violence advocacy"
+        }, 
+        {
+            "relevance": "0.577172", 
+            "text": "protective order"
+        }, 
+        {
+            "relevance": "0.534693", 
+            "text": "rap music"
+        }, 
+        {
+            "relevance": "0.530838", 
+            "text": "rap lyrics"
+        }, 
+        {
+            "relevance": "0.517113", 
+            "text": "violent threats"
+        }, 
+        {
+            "relevance": "0.510851", 
+            "text": "illegal threats"
+        }, 
+        {
+            "relevance": "0.506325", 
+            "text": "crude comments"
+        }, 
+        {
+            "relevance": "0.50422", 
+            "text": "violent lyrics"
+        }, 
+        {
+            "relevance": "0.499085", 
+            "text": "rap stars"
+        }, 
+        {
+            "relevance": "0.497801", 
+            "text": "rap artist"
+        }, 
+        {
+            "relevance": "0.495755", 
+            "text": "free speech"
+        }, 
+        {
+            "relevance": "0.495497", 
+            "text": "digital age"
+        }, 
+        {
+            "relevance": "0.494316", 
+            "text": "Pennsylvania man"
+        }, 
+        {
+            "relevance": "0.492113", 
+            "text": "Eminem song"
+        }, 
+        {
+            "relevance": "0.492021", 
+            "text": "FBI agent"
+        }, 
+        {
+            "relevance": "0.489861", 
+            "text": "Anthony Elonis"
+        }, 
+        {
+            "relevance": "0.488959", 
+            "text": "Supreme Court"
+        }, 
+        {
+            "relevance": "0.486136", 
+            "text": "pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife."
+        }, 
+        {
+            "relevance": "0.482355", 
+            "text": "sarcastic comments"
+        }, 
+        {
+            "relevance": "0.478249", 
+            "text": "little agreement"
+        }, 
+        {
+            "relevance": "0.475794", 
+            "text": "proper test"
+        }, 
+        {
+            "relevance": "0.475081", 
+            "text": "federal law"
+        }, 
+        {
+            "relevance": "0.471138", 
+            "text": "better standard"
+        }, 
+        {
+            "relevance": "0.470591", 
+            "text": "free-speech advocates"
+        }
+    ], 
+    "concepts": [
+        {
+            "website": "http://www.supremecourtus.gov/", 
+            "yago": "http://yago-knowledge.org/resource/Supreme_Court_of_the_United_States", 
+            "text": "Supreme Court of the United States", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvegiTpwpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/Supreme_Court_of_the_United_States", 
+            "freebase": "http://rdf.freebase.com/ns/m.07sz1", 
+            "relevance": "0.982768", 
+            "geo": "38.890708333333336 -77.00434444444444"
+        }, 
+        {
+            "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+            "yago": "http://yago-knowledge.org/resource/Ruth_Bader_Ginsburg", 
+            "text": "Ruth Bader Ginsburg", 
+            "dbpedia": "http://dbpedia.org/resource/Ruth_Bader_Ginsburg", 
+            "freebase": "http://rdf.freebase.com/ns/m.0199pk", 
+            "relevance": "0.861047"
+        }, 
+        {
+            "relevance": "0.7251", 
+            "text": "John G. Roberts", 
+            "dbpedia": "http://dbpedia.org/resource/John_G._Roberts"
+        }, 
+        {
+            "website": "http://www.usa.gov/", 
+            "yago": "http://yago-knowledge.org/resource/United_States", 
+            "text": "United States", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvVikKpwpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/United_States", 
+            "freebase": "http://rdf.freebase.com/ns/m.09c7w0", 
+            "relevance": "0.66707", 
+            "ciaFactbook": "http://www4.wiwiss.fu-berlin.de/factbook/resource/United_States"
+        }, 
+        {
+            "relevance": "0.553112", 
+            "text": "Rapping", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rzQXDcip_QdiIBoeuUEmDxA", 
+            "dbpedia": "http://dbpedia.org/resource/Rapping", 
+            "freebase": "http://rdf.freebase.com/ns/m.06bxc"
+        }, 
+        {
+            "relevance": "0.486803", 
+            "text": "Domestic violence", 
+            "opencyc": "http://sw.opencyc.org/concept/Mx4rvuWhp5wpEbGdrcN5Y29ycA", 
+            "dbpedia": "http://dbpedia.org/resource/Domestic_violence", 
+            "freebase": "http://rdf.freebase.com/ns/m.02gr_"
+        }, 
+        {
+            "website": "http://www.supremecourtus.gov/about/biographiescurrent.pdf", 
+            "yago": "http://yago-knowledge.org/resource/Stephen_Breyer", 
+            "text": "Stephen Breyer", 
+            "dbpedia": "http://dbpedia.org/resource/Stephen_Breyer", 
+            "freebase": "http://rdf.freebase.com/ns/m.016m0v", 
+            "relevance": "0.468485"
+        }, 
+        {
+            "website": "http://www.eminem.com/", 
+            "yago": "http://yago-knowledge.org/resource/Eminem", 
+            "text": "Eminem", 
+            "musicBrainz": "http://zitgist.com/music/artist/b95ce3ff-3d05-4e87-9e01-c97b66af13d4", 
+            "dbpedia": "http://dbpedia.org/resource/Eminem", 
+            "freebase": "http://rdf.freebase.com/ns/m.01vsgrn", 
+            "relevance": "0.456368"
+        }
+    ], 
+    "usage": "By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html"
+}
+
+## Keywords ##
+video-game chat rooms  :  0.911508
+video-game chat room  :  0.675931
+reasonable person  :  0.648727
+Justice John Roberts  :  0.634067
+Ruth Bader Ginsburg  :  0.632591
+Department attorney Michael  :  0.600222
+Domestic violence advocacy  :  0.590803
+protective order  :  0.577172
+rap music  :  0.534693
+rap lyrics  :  0.530838
+violent threats  :  0.517113
+illegal threats  :  0.510851
+crude comments  :  0.506325
+violent lyrics  :  0.50422
+rap stars  :  0.499085
+rap artist  :  0.497801
+free speech  :  0.495755
+digital age  :  0.495497
+Pennsylvania man  :  0.494316
+Eminem song  :  0.492113
+FBI agent  :  0.492021
+Anthony Elonis  :  0.489861
+Supreme Court  :  0.488959
+pseudonym 'Tone Dougie' were simply a way for him to vent his frustration over splitting up with his wife.  :  0.486136
+sarcastic comments  :  0.482355
+little agreement  :  0.478249
+proper test  :  0.475794
+federal law  :  0.475081
+better standard  :  0.471138
+free-speech advocates  :  0.470591
+
+## Concepts ##
+Supreme Court of the United States  :  0.982768
+Ruth Bader Ginsburg  :  0.861047
+John G. Roberts  :  0.7251
+United States  :  0.66707
+Rapping  :  0.553112
+Domestic violence  :  0.486803
+Stephen Breyer  :  0.468485
+Eminem  :  0.456368
+
+## Entities ##
+Person  :  Chief Justice John Roberts ,  0.787497
+Person  :  Anthony Elonis ,  0.68244
+FieldTerminology  :  chat room ,  0.550999
+Person  :  Justice Ruth Bader Ginsburg ,  0.50815
+Person  :  Eminem ,  0.498861
+Company  :  Facebook ,  0.495382
+Person  :  Michael Dreeben ,  0.465509
+Organization  :  Supreme Court ,  0.405244
+City  :  WASHINGTON ,  0.36095
+StateOrCounty  :  Pennsylvania ,  0.359388
+FieldTerminology  :  First Amendment ,  0.356426
+FieldTerminology  :  Domestic violence ,  0.352762
+Organization  :  FBI ,  0.345581
+Person  :  Alito ,  0.339691
+Organization  :  Justice Department ,  0.336931
+FieldTerminology  :  federal law ,  0.334729
+Degree  :  stent ,  0.332624
+Person  :  Elwood ,  0.326892
+Company  :  Twitter ,  0.305117
+FieldTerminology  :  social media ,  0.295131
+JobTitle  :  attorney ,  0.290693
+Quantity  :  five days ,  0.290693
+ 
+
+
