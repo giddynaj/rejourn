@@ -6,7 +6,7 @@ bcdoc==0.12.2
 beautifulsoup4==4.3.2
 boto==2.34.0
 botocore==0.75.0
-bottle==0.12.7
+bottle==0.12.19
 chardet==2.0.1
 Cheetah==2.4.1
 cloud-init==0.7.2
