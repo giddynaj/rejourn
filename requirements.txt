@@ -31,7 +31,7 @@ numpy==1.7.2
 ordereddict==1.1
 paramiko==1.7.5
 PIL==1.1.6
-pip==1.5.6
+pip==21.1
 ply==3.4
 pycrypto==2.6.1
 pycurl==7.19.0
